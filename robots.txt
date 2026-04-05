@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://eliezerwork46-sketch.github.io/Eliezer_CV_LandingPage/sitemap.xml
