@@ -205,15 +205,17 @@ nav::after{
 .hero-download-link{
   display:inline-flex;align-items:center;gap:10px;
   padding:12px 18px;border-radius:999px;
-  border:1px solid rgba(245,247,255,0.22);
-  background:rgba(245,247,255,0.08);color:var(--white);
+  border:1px solid rgba(77,142,255,0.45);
+  background:linear-gradient(135deg,rgba(26,78,180,0.96),rgba(56,124,255,0.92));
+  color:var(--white);
   text-decoration:none;font-size:0.76rem;font-weight:600;
   letter-spacing:1.5px;text-transform:uppercase;
-  box-shadow:0 10px 24px rgba(0,0,0,0.18);
+  box-shadow:0 12px 28px rgba(6,16,34,0.28);
   transition:all 0.3s;
 }
 .hero-download-link:hover{
-  background:rgba(200,16,46,0.14);border-color:rgba(200,16,46,0.42);
+  background:linear-gradient(135deg,rgba(39,96,210,1),rgba(103,162,255,0.96));
+  border-color:rgba(155,192,255,0.72);
   transform:translateY(-2px);
 }
 .hero-download-link:focus-visible{outline:2px solid var(--accent2);outline-offset:3px;}
@@ -386,7 +388,9 @@ nav::after{
 .contact-intro p{color:var(--muted);line-height:1.9;font-size:1rem;margin-bottom:20px;}
 .contact-intro blockquote{border-left:2px solid var(--red);padding-left:20px;font-style:italic;color:var(--muted);font-size:0.95rem;line-height:1.8;}
 .contact-cta{margin-top:22px;display:flex;flex-wrap:wrap;gap:12px;}
-.contact-cta .hero-download-link{background:rgba(245,247,255,0.06);}
+.contact-cta .hero-download-link{
+  background:linear-gradient(135deg,rgba(14,42,98,0.94),rgba(40,96,212,0.9));
+}
 .clinks{display:flex;flex-direction:column;gap:14px;}
 .clink{display:flex;align-items:center;gap:18px;background:var(--blue3);border:1px solid var(--border);border-radius:8px;padding:18px 24px;text-decoration:none;color:var(--white);transition:all 0.3s;}
 .clink:hover{border-color:var(--red2);transform:translateX(8px);background:rgba(200,16,46,0.1);}
@@ -451,6 +455,11 @@ footer span{color:var(--red2);}
   .carousel-track{padding:10px 56px 28px;}
   .about-wrap,.exp-grid,.skills-grid,.contact-wrap,.blog-grid{grid-template-columns:1fr;}
   .edu-item{grid-template-columns:1fr;gap:10px;}
+  .hero-photo{
+    background:
+      linear-gradient(90deg,rgba(10,22,40,0.94) 0%,rgba(10,22,40,0.78) 28%,rgba(10,22,40,0.36) 54%,rgba(10,22,40,0.16) 76%,rgba(10,22,40,0.06) 100%),
+      url('Hero.webp') 24% center/cover no-repeat;
+  }
   .hero-download{top:98px;right:24px;}
   .hero-name{font-size:clamp(4rem,18vw,7rem);}
   .ecard-head{align-items:flex-start;flex-direction:column;}
@@ -848,8 +857,8 @@ const i18n = {
     "hero.supportLink":"Ver causa",
     "hero.download":"Download CV",
     "hero.scroll":"Desliza",
-    "seo.p1":"Este sitio funciona como el <strong>Curriculum Vitae online de Eliezer Prieto</strong>, una <strong>hoja de vida profesional</strong> pensada para mostrar experiencia, educación, habilidades, proyectos y formas de contacto desde GitHub Pages.",
-    "seo.p2":"Aquí presento mi <strong>CV online</strong> y mi <strong>perfil profesional</strong> de forma clara, actualizada y accesible en español, inglés y portugués, para mostrar mi experiencia, mi formación y el valor real que puedo aportar.",
+    "seo.p1":"En este sitio presento mi <strong>Curriculum Vitae online</strong>, una <strong>hoja de vida profesional</strong> donde reúno mi experiencia, educación, habilidades, proyectos y formas de contacto.",
+    "seo.p2":"Aquí comparto mi <strong>CV online</strong> y mi <strong>perfil profesional</strong> de forma clara, actualizada y accesible en español, inglés y portugués, para que puedas conocer mejor mi trayectoria y el valor que puedo aportar.",
     "seo.link1":"Ver experiencia profesional","seo.link2":"Ver educación y estudios","seo.link3":"Ir al contacto","seo.link4":"Conocer mi causa familiar",
     "about.label":"01 — About","about.title":"SOBRE MÍ",
     "about.p1":"Soy <b>Eliezer Antonio Prieto Pantoja</b>, un profesional cubano cuya historia está hecha de ciencia, fe y resiliencia. Me gradué del <b>IPVCE Vladimir Ilich Lenin</b>, una de las instituciones más exigentes de Cuba, y desde ahí estudié <b>Ingeniería Nuclear</b> y un año en el Instituto Eclesiástico <b>Padre Félix Varela</b>.",
@@ -892,15 +901,15 @@ const i18n = {
     "edu.y1":"Formación Base","edu.inst1":"Instituto Preuniversitario Vocacional de Ciencias Exactas · Cuba","edu.note1":"Una de las instituciones más exigentes de Cuba. Formación intensiva en matemáticas, física y ciencias aplicadas que forjó mi pensamiento analítico y disciplina.",
     "edu.y2":"Educación Superior","edu.title2":"Ingeniería Nuclear","edu.inst2":"Universidad · Cuba","edu.note2":"Estudios en una de las ingenierías más complejas y exigentes. Física nuclear, termodinámica y sistemas de alta complejidad técnica.",
     "edu.y3":"Formación Humanística","edu.inst3":"Instituto de Estudios Eclesiásticos · Cuba","edu.note3":"Un año de humanidades, ética y pensamiento crítico. Enriqueció mi visión del mundo y mi capacidad de conectar con personas de distintas culturas y creencias.",
-    "faq.label":"05 — FAQ SEO","faq.title":"PREGUNTAS FRECUENTES SOBRE EL CV DE ELIEZER PRIETO",
-    "faq.q1":"¿Dónde encuentro el CV de Eliezer Prieto?",
-    "faq.a1":"En esta web puedes encontrar el curriculum vitae online, la hoja de vida digital y el perfil profesional actualizado de Eliezer Prieto, con experiencia, educación, habilidades y contacto.",
-    "faq.q2":"¿Qué incluye la hoja de vida de Eliezer Prieto?",
-    "faq.a2":"Incluye experiencia profesional en turismo y emprendimiento, formación técnica y humanística, idiomas, proyectos y enlaces directos para contacto profesional.",
-    "faq.q3":"¿Dónde está publicado el perfil profesional online de Eliezer Prieto?",
-    "faq.a3":"El perfil profesional online de Eliezer Prieto está publicado en GitHub Pages, con una versión optimizada para SEO y accesible desde cualquier dispositivo.",
+    "faq.label":"05 — Preguntas frecuentes","faq.title":"PREGUNTAS FRECUENTES",
+    "faq.q1":"¿Qué encontrarás en este CV?",
+    "faq.a1":"Aquí encontrarás una visión clara de mi experiencia, mi formación, mis habilidades, mis proyectos y mis datos de contacto, todo reunido en un solo lugar.",
+    "faq.q2":"¿En qué áreas puedo aportar más valor?",
+    "faq.a2":"Puedo aportar especialmente en turismo, atención al cliente, operaciones, logística, proyectos técnicos, comunicación intercultural y emprendimiento.",
+    "faq.q3":"¿Cómo puedes contactar conmigo?",
+    "faq.a3":"Puedes escribirme por email, WhatsApp o Instagram. En la sección de contacto dejo mis canales directos para conversar sobre trabajo, colaboraciones u oportunidades.",
     "contact.label":"06 — Contacto","contact.title":"HABLEMOS",
-    "contact.p":"Eliezer Antonio Prieto Pantoja. Actualmente en Boa Vista, Roraima, Brasil, con disponibilidad laboral inmediata a contrato para oportunidades en turismo, operaciones, proyectos técnicos y atención al cliente de alto nivel.",
+    "contact.p":"Actualmente estoy en Boa Vista, Roraima, Brasil, con disponibilidad inmediata a contrato para oportunidades en turismo, operaciones, proyectos técnicos y atención al cliente de alto nivel.",
     "contact.quote":'"Listo para aportar experiencia, criterio y liderazgo desde el primer día."',
     "contact.supportPrompt":"También puedes apoyar mi causa",
     "contact.supportLink":"Ver donaciones",
@@ -916,8 +925,8 @@ const i18n = {
     "hero.supportLink":"See cause",
     "hero.download":"Download CV",
     "hero.scroll":"Scroll",
-    "seo.p1":"This site works as the <strong>online Curriculum Vitae of Eliezer Prieto</strong>, a professional <strong>resume and career profile</strong> designed to show experience, education, skills, projects and contact options on GitHub Pages.",
-    "seo.p2":"Here I present my <strong>online CV</strong> and <strong>professional profile</strong> in a clear, updated format available in Spanish, English and Portuguese, showing my experience, education and the real value I can bring.",
+    "seo.p1":"On this site I present my <strong>online Curriculum Vitae</strong>, a professional <strong>resume and career profile</strong> where I bring together my experience, education, skills, projects and contact options.",
+    "seo.p2":"Here I share my <strong>online CV</strong> and <strong>professional profile</strong> in a clear, updated format available in Spanish, English and Portuguese, so you can quickly understand my background and the value I can bring.",
     "seo.link1":"View professional experience","seo.link2":"View education and studies","seo.link3":"Go to contact","seo.link4":"See my family cause",
     "about.label":"01 — About","about.title":"ABOUT ME",
     "about.p1":"I am <b>Eliezer Antonio Prieto Pantoja</b>, a Cuban professional whose story is built on science, faith and resilience. I graduated from <b>IPVCE Vladimir Ilich Lenin</b>, one of Cuba's most demanding institutions, and went on to study <b>Nuclear Engineering</b> and one year at the Ecclesiastical Institute <b>Padre Félix Varela</b>.",
@@ -960,15 +969,15 @@ const i18n = {
     "edu.y1":"Foundation","edu.inst1":"Pre-University Institute of Exact Sciences · Cuba","edu.note1":"One of Cuba's most demanding institutions. Intensive training in mathematics, physics and applied sciences that shaped my analytical thinking and discipline.",
     "edu.y2":"Higher Education","edu.title2":"Nuclear Engineering","edu.inst2":"University · Cuba","edu.note2":"Studies in one of the most complex and demanding fields of engineering. Nuclear physics, thermodynamics and high-complexity technical systems.",
     "edu.y3":"Humanistic Studies","edu.inst3":"Ecclesiastical Studies Institute · Cuba","edu.note3":"One year of humanities, ethics and critical thinking. Enriched my worldview and ability to connect with people from different cultures and beliefs.",
-    "faq.label":"05 — SEO FAQ","faq.title":"FREQUENT QUESTIONS ABOUT ELIEZER PRIETO'S CV",
-    "faq.q1":"Where can I find Eliezer Prieto's CV?",
-    "faq.a1":"On this website you can find Eliezer Prieto's online curriculum vitae, digital resume and updated professional profile, including experience, education, skills and contact information.",
-    "faq.q2":"What does Eliezer Prieto's resume include?",
-    "faq.a2":"It includes professional experience in tourism and entrepreneurship, technical and humanistic education, languages, projects and direct links for professional contact.",
-    "faq.q3":"Where is Eliezer Prieto's professional profile published?",
-    "faq.a3":"Eliezer Prieto's online professional profile is published on GitHub Pages in an SEO-optimized format accessible from any device.",
+    "faq.label":"05 — Frequently asked questions","faq.title":"FREQUENT QUESTIONS",
+    "faq.q1":"What will you find in this CV?",
+    "faq.a1":"You will find a clear overview of my experience, education, skills, projects and contact details, all gathered in one place.",
+    "faq.q2":"Where can I add the most value?",
+    "faq.a2":"I can add the most value in tourism, customer service, operations, logistics, technical projects, intercultural communication and entrepreneurship.",
+    "faq.q3":"How can you contact me?",
+    "faq.a3":"You can contact me by email, WhatsApp or Instagram. In the contact section I share my direct channels for work, collaborations and new opportunities.",
     "contact.label":"06 — Contact","contact.title":"LET'S TALK",
-    "contact.p":"Eliezer Antonio Prieto Pantoja. Currently based in Boa Vista, Roraima, Brazil, with immediate contract availability for opportunities in tourism, operations, technical projects and high-level customer service.",
+    "contact.p":"I am currently based in Boa Vista, Roraima, Brazil, with immediate contract availability for opportunities in tourism, operations, technical projects and high-level customer service.",
     "contact.quote":'"Ready to contribute experience, judgment and leadership from day one."',
     "contact.supportPrompt":"You can also support my cause",
     "contact.supportLink":"View donations",
@@ -984,8 +993,8 @@ const i18n = {
     "hero.supportLink":"Ver causa",
     "hero.download":"Download CV",
     "hero.scroll":"Role",
-    "seo.p1":"Este site funciona como o <strong>Curriculum Vitae online de Eliezer Prieto</strong>, uma <strong>folha de vida e perfil profissional</strong> pensada para mostrar experiência, educação, habilidades, projetos e formas de contato no GitHub Pages.",
-    "seo.p2":"Aqui apresento meu <strong>CV online</strong> e meu <strong>perfil profissional</strong> de forma clara, atualizada e acessível em espanhol, inglês e português, mostrando minha experiência, minha formação e o valor real que posso entregar.",
+    "seo.p1":"Neste site apresento meu <strong>Curriculum Vitae online</strong>, uma <strong>folha de vida e perfil profissional</strong> onde reúno minha experiência, educação, habilidades, projetos e formas de contato.",
+    "seo.p2":"Aqui compartilho meu <strong>CV online</strong> e meu <strong>perfil profissional</strong> de forma clara, atualizada e acessível em espanhol, inglês e português, para que você conheça melhor minha trajetória e o valor que posso entregar.",
     "seo.link1":"Ver experiência profissional","seo.link2":"Ver educação e estudos","seo.link3":"Ir para contato","seo.link4":"Conhecer minha causa familiar",
     "about.label":"01 — About","about.title":"SOBRE MIM",
     "about.p1":"Sou <b>Eliezer Antonio Prieto Pantoja</b>, um profissional cubano cuja história é feita de ciência, fé e resiliência. Me formei no <b>IPVCE Vladimir Ilich Lenin</b>, uma das instituições mais exigentes de Cuba, e fui estudar <b>Engenharia Nuclear</b> e um ano no Instituto Eclesiástico <b>Padre Félix Varela</b>.",
@@ -1028,15 +1037,15 @@ const i18n = {
     "edu.y1":"Formação Base","edu.inst1":"Instituto Pré-Universitário Vocacional de Ciências Exatas · Cuba","edu.note1":"Uma das instituições mais exigentes de Cuba. Formação intensiva em matemática, física e ciências aplicadas que moldou meu pensamento analítico e disciplina.",
     "edu.y2":"Educação Superior","edu.title2":"Engenharia Nuclear","edu.inst2":"Universidade · Cuba","edu.note2":"Estudos em uma das engenharias mais complexas. Física nuclear, termodinâmica e sistemas de alta complexidade técnica.",
     "edu.y3":"Formação Humanística","edu.inst3":"Instituto de Estudos Eclesiásticos · Cuba","edu.note3":"Um ano de humanidades, ética e pensamento crítico. Enriqueceu minha visão de mundo e minha capacidade de conectar com pessoas de diferentes culturas.",
-    "faq.label":"05 — FAQ SEO","faq.title":"PERGUNTAS FREQUENTES SOBRE O CV DE ELIEZER PRIETO",
-    "faq.q1":"Onde encontro o CV de Eliezer Prieto?",
-    "faq.a1":"Neste site você encontra o curriculum vitae online, a folha de vida digital e o perfil profissional atualizado de Eliezer Prieto, com experiência, educação, habilidades e contato.",
-    "faq.q2":"O que inclui a folha de vida de Eliezer Prieto?",
-    "faq.a2":"Inclui experiência profissional em turismo e empreendedorismo, formação técnica e humanística, idiomas, projetos e links diretos para contato profissional.",
-    "faq.q3":"Onde está publicado o perfil profissional online de Eliezer Prieto?",
-    "faq.a3":"O perfil profissional online de Eliezer Prieto está publicado no GitHub Pages, em uma versão otimizada para SEO e acessível de qualquer dispositivo.",
+    "faq.label":"05 — Perguntas frequentes","faq.title":"PERGUNTAS FREQUENTES",
+    "faq.q1":"O que você vai encontrar neste CV?",
+    "faq.a1":"Aqui você encontra uma visão clara da minha experiência, da minha formação, das minhas habilidades, dos meus projetos e dos meus contatos, tudo reunido em um só lugar.",
+    "faq.q2":"Em que áreas posso gerar mais valor?",
+    "faq.a2":"Posso gerar mais valor especialmente em turismo, atendimento ao cliente, operações, logística, projetos técnicos, comunicação intercultural e empreendedorismo.",
+    "faq.q3":"Como você pode falar comigo?",
+    "faq.a3":"Você pode falar comigo por email, WhatsApp ou Instagram. Na seção de contato deixo meus canais diretos para conversar sobre trabalho, colaborações e novas oportunidades.",
     "contact.label":"06 — Contato","contact.title":"VAMOS CONVERSAR",
-    "contact.p":"Eliezer Antonio Prieto Pantoja. Atualmente em Boa Vista, Roraima, Brasil, com disponibilidade imediata para contrato em oportunidades de turismo, operações, projetos técnicos e atendimento ao cliente de alto nível.",
+    "contact.p":"Atualmente estou em Boa Vista, Roraima, Brasil, com disponibilidade imediata para contrato em oportunidades de turismo, operações, projetos técnicos e atendimento ao cliente de alto nível.",
     "contact.quote":'"Pronto para contribuir com experiência, critério e liderança desde o primeiro dia."',
     "contact.supportPrompt":"Você também pode apoiar minha causa",
     "contact.supportLink":"Ver doações",
