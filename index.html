@@ -28,6 +28,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="image" href="Hero.webp" fetchpriority="high">
+<link rel="preload" as="image" href="BICI%201.webp">
+<link rel="preload" as="image" href="REVOLUCION.webp">
+<link rel="preload" as="image" href="COMPLETO.webp">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%2300247d'/%3E%3Crect y='12.8' width='64' height='12.8' fill='%23ffffff'/%3E%3Crect y='38.4' width='64' height='12.8' fill='%23ffffff'/%3E%3Cpolygon points='0,0 30,32 0,64' fill='%23cf142b'/%3E%3Cpolygon points='11,32 14.5,21.5 25.5,21.5 16.5,15 20,4.5 11,11 2,4.5 5.5,15 -3.5,21.5 7.5,21.5' fill='%23ffffff' transform='translate(0 10)'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,600;1,300&display=swap">
 
@@ -323,19 +326,31 @@ nav::after{
 .tours-label{font-size:0.72rem;letter-spacing:5px;text-transform:uppercase;color:var(--red2);margin-bottom:10px;}
 .tours-heading{font-family:'Bebas Neue',sans-serif;font-size:clamp(1.8rem,3.5vw,2.8rem);letter-spacing:2px;margin-bottom:28px;}
 .carousel-outer{position:relative;}
-.carousel-track{display:flex;gap:20px;overflow-x:auto;scroll-behavior:smooth;padding:10px 56px 28px;scrollbar-width:none;-ms-overflow-style:none;cursor:grab;}
+.carousel-track{display:flex;gap:20px;overflow-x:auto;scroll-behavior:smooth;padding:10px 56px 28px;scrollbar-width:none;-ms-overflow-style:none;cursor:grab;overscroll-behavior-x:contain;touch-action:pan-x;}
 .carousel-track::-webkit-scrollbar{display:none;}
 .carousel-track.grabbing{cursor:grabbing;}
 .tour-card{flex:0 0 300px;background:var(--blue3);border:1px solid var(--border);border-radius:8px;overflow:hidden;transition:all 0.3s;text-decoration:none;color:var(--white);display:block;}
 .tour-card:hover{transform:translateY(-6px);border-color:rgba(200,16,46,0.35);box-shadow:0 20px 40px rgba(0,0,0,0.5);}
 .tour-img{
   width:100%;height:180px;
-  background-color:var(--blue2);
+  background:
+    linear-gradient(135deg,rgba(19,39,72,0.94),rgba(10,22,40,0.98)),
+    linear-gradient(90deg,rgba(77,142,255,0.16),rgba(200,16,46,0.08));
   position:relative;
   overflow:hidden;
 }
 .tour-img img{
   width:100%;height:100%;object-fit:cover;display:block;
+  opacity:0;
+  transform:scale(1.04);
+  filter:blur(12px);
+  transition:opacity 0.45s ease,transform 0.55s ease,filter 0.55s ease;
+  will-change:opacity,transform,filter;
+}
+.tour-img img.is-loaded{
+  opacity:1;
+  transform:none;
+  filter:none;
 }
 .tour-img::after{
   content:'';
@@ -642,7 +657,7 @@ footer span{color:var(--red2);}
     <button class="cbtn" id="prev">←</button>
     <div class="carousel-track" id="track">
       <a class="tour-card" href="https://www.civitatis.com/es/la-habana/free-tour-bicicleta-habana/opiniones/" target="_blank" rel="noopener noreferrer">
-        <div class="tour-img"><img src="BICI%201.webp" alt="Eliezer Prieto CV online tour en bicicleta por La Habana" loading="lazy" decoding="async" width="640" height="384"></div>
+        <div class="tour-img"><img src="BICI%201.webp" alt="Eliezer Prieto CV online tour en bicicleta por La Habana" loading="eager" fetchpriority="high" decoding="async" width="640" height="384"></div>
         <div class="tour-body">
           <h3 class="tour-title" data-i18n="tour1.title">Bici por La Habana</h3>
           <div class="tour-loc" data-i18n="tour1.loc">📍 La Habana · Civitatis</div>
@@ -651,7 +666,7 @@ footer span{color:var(--red2);}
         </div>
       </a>
       <a class="tour-card" href="https://www.civitatis.com/es/la-habana/tour-revolucion-cubana/opiniones/" target="_blank" rel="noopener noreferrer">
-        <div class="tour-img"><img src="REVOLUCION.webp" alt="Eliezer Prieto hoja de vida tour sobre la Revolución Cubana" loading="lazy" decoding="async" width="640" height="384"></div>
+        <div class="tour-img"><img src="REVOLUCION.webp" alt="Eliezer Prieto hoja de vida tour sobre la Revolución Cubana" loading="eager" fetchpriority="high" decoding="async" width="640" height="384"></div>
         <div class="tour-body">
           <h3 class="tour-title" data-i18n="tour2.title">Revolución Cubana</h3>
           <div class="tour-loc" data-i18n="tour2.loc">📍 La Habana · Civitatis</div>
@@ -660,7 +675,7 @@ footer span{color:var(--red2);}
         </div>
       </a>
       <a class="tour-card" href="https://www.civitatis.com/es/la-habana/tour-completo-habana/opiniones/" target="_blank" rel="noopener noreferrer">
-        <div class="tour-img"><img src="COMPLETO.webp" alt="Eliezer Prieto perfil profesional tour completo por La Habana" loading="lazy" decoding="async" width="640" height="384"></div>
+        <div class="tour-img"><img src="COMPLETO.webp" alt="Eliezer Prieto perfil profesional tour completo por La Habana" loading="eager" fetchpriority="high" decoding="async" width="640" height="384"></div>
         <div class="tour-body">
           <h3 class="tour-title" data-i18n="tour3.title">Tour Completo</h3>
           <div class="tour-loc" data-i18n="tour3.loc">📍 La Habana · Civitatis</div>
@@ -669,7 +684,7 @@ footer span{color:var(--red2);}
         </div>
       </a>
       <a class="tour-card" href="https://www.civitatis.com/es/la-habana/free-tour-nocturno-habana/opiniones/" target="_blank" rel="noopener noreferrer">
-        <div class="tour-img"><img src="NOCTURNO%201.webp" alt="Curriculum vitae de Eliezer Prieto tour nocturno de bares en La Habana" loading="lazy" decoding="async" width="640" height="384"></div>
+        <div class="tour-img"><img src="NOCTURNO%201.webp" alt="Curriculum vitae de Eliezer Prieto tour nocturno de bares en La Habana" loading="lazy" fetchpriority="low" decoding="async" width="640" height="384"></div>
         <div class="tour-body">
           <h3 class="tour-title" data-i18n="tour4.title">Nocturno de Bares</h3>
           <div class="tour-loc" data-i18n="tour4.loc">📍 La Habana · Civitatis</div>
@@ -678,7 +693,7 @@ footer span{color:var(--red2);}
         </div>
       </a>
       <a class="tour-card" href="https://www.civitatis.com/es/la-habana/free-tour-habana-colonial/opiniones/" target="_blank" rel="noopener noreferrer">
-        <div class="tour-img"><img src="COLONIAL.webp" alt="Eliezer Prieto GitHub Pages tour colonial en La Habana" loading="lazy" decoding="async" width="640" height="384"></div>
+        <div class="tour-img"><img src="COLONIAL.webp" alt="Eliezer Prieto GitHub Pages tour colonial en La Habana" loading="lazy" fetchpriority="low" decoding="async" width="640" height="384"></div>
         <div class="tour-body">
           <h3 class="tour-title" data-i18n="tour5.title">Colonial</h3>
           <div class="tour-loc" data-i18n="tour5.loc">📍 La Habana · Civitatis</div>
@@ -687,7 +702,7 @@ footer span{color:var(--red2);}
         </div>
       </a>
       <a class="tour-card" href="https://www.civitatis.com/es/la-habana/free-tour-barrio-casablanca/opiniones/" target="_blank" rel="noopener noreferrer">
-        <div class="tour-img"><img src="CASA%20BLANCA%201.webp" alt="Eliezer Prieto curriculum vitae tour por Casa Blanca en La Habana" loading="lazy" decoding="async" width="640" height="384"></div>
+        <div class="tour-img"><img src="CASA%20BLANCA%201.webp" alt="Eliezer Prieto curriculum vitae tour por Casa Blanca en La Habana" loading="lazy" fetchpriority="low" decoding="async" width="640" height="384"></div>
         <div class="tour-body">
           <h3 class="tour-title" data-i18n="tour6.title">Casa Blanca</h3>
           <div class="tour-loc" data-i18n="tour6.loc">📍 La Habana · Civitatis</div>
@@ -696,7 +711,7 @@ footer span{color:var(--red2);}
         </div>
       </a>
       <a class="tour-card" href="https://www.civitatis.com/es/la-habana/contrastes-habana/opiniones/" target="_blank" rel="noopener noreferrer">
-        <div class="tour-img"><img src="CONTRAST.webp" alt="Hoja de vida de Eliezer Prieto tour de contrastes en La Habana" loading="lazy" decoding="async" width="640" height="384"></div>
+        <div class="tour-img"><img src="CONTRAST.webp" alt="Hoja de vida de Eliezer Prieto tour de contrastes en La Habana" loading="lazy" fetchpriority="low" decoding="async" width="640" height="384"></div>
         <div class="tour-body">
           <h3 class="tour-title" data-i18n="tour7.title">Contrastes</h3>
           <div class="tour-loc" data-i18n="tour7.loc">📍 La Habana · Civitatis</div>
@@ -705,7 +720,7 @@ footer span{color:var(--red2);}
         </div>
       </a>
       <a class="tour-card" href="https://www.civitatis.com/es/la-habana/tour-religion-yoruba/opiniones/" target="_blank" rel="noopener noreferrer">
-        <div class="tour-img"><img src="YORUBA.webp" alt="Perfil profesional de Eliezer Prieto tour sobre religión yoruba" loading="lazy" decoding="async" width="640" height="384"></div>
+        <div class="tour-img"><img src="YORUBA.webp" alt="Perfil profesional de Eliezer Prieto tour sobre religión yoruba" loading="lazy" fetchpriority="low" decoding="async" width="640" height="384"></div>
         <div class="tour-body">
           <h3 class="tour-title" data-i18n="tour8.title">Yoruba</h3>
           <div class="tour-loc" data-i18n="tour8.loc">📍 La Habana · Civitatis</div>
@@ -1181,7 +1196,10 @@ function resizeBg(){
   if(!bgCanvas||!bgCtx)return;
   bgCanvas.width=window.innerWidth;
   bgCanvas.height=window.innerHeight;
-  const count=Math.min(72,Math.max(34,Math.floor(window.innerWidth/24)));
+  const isTouchLike=window.matchMedia('(max-width: 768px)').matches||window.matchMedia('(pointer: coarse)').matches;
+  const count=isTouchLike
+    ? Math.min(18,Math.max(10,Math.floor(window.innerWidth/52)))
+    : Math.min(72,Math.max(34,Math.floor(window.innerWidth/24)));
   symbols=Array.from({length:count},(_,i)=>makeSymbol(i));
 }
 
@@ -1294,6 +1312,14 @@ const obs=new IntersectionObserver(entries=>{
 document.querySelectorAll('.reveal').forEach(r=>obs.observe(r));
 
 renderStudyPanels(currentLang);
+document.querySelectorAll('.tour-img img').forEach(img=>{
+  const markLoaded=()=>img.classList.add('is-loaded');
+  if(img.complete)markLoaded();
+  else{
+    img.addEventListener('load',markLoaded,{once:true});
+    img.addEventListener('error',markLoaded,{once:true});
+  }
+});
 document.querySelectorAll('[data-accordion-target]').forEach(button=>{
   button.addEventListener('click',()=>{
     const panel=document.getElementById(button.getAttribute('data-accordion-target'));
