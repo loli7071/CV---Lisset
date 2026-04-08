@@ -1,590 +1,102 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Eliezer Prieto | Curriculum Vitae PDF English</title>
+<title>Lisset Gomez | CV PDF EN</title>
 <style>
-  @page {
-    size: A4;
-    margin: 0;
+  @page { size: A4; margin: 0; }
+  :root{
+    --navy:#0b1830; --navy-soft:#162a4d; --blue:#4d8eff; --red:#ef3557;
+    --ink:#132133; --muted:#5f6f80; --paper:#ffffff; --line:rgba(19,33,51,.12);
   }
-
-  :root {
-    --navy: #08111f;
-    --navy-soft: #12233f;
-    --panel: #e8efff;
-    --ink: #081425;
-    --muted: #1f314d;
-    --line: rgba(18, 35, 63, 0.14);
-    --red: #c8102e;
-    --blue: #2c6bff;
-    --white: #ffffff;
-  }
-
-  * {
-    box-sizing: border-box;
-  }
-
-  html, body {
-    width: 210mm;
-    height: 297mm;
-    margin: 0;
-    padding: 0;
-    background: #d8dfef;
-    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-    color: var(--ink);
-  }
-
-  body {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-  }
-
-  .page {
-    width: 210mm;
-    height: 297mm;
-    padding: 4.2mm;
-    background:
-      radial-gradient(circle at top right, rgba(44, 107, 255, 0.14), transparent 26%),
-      radial-gradient(circle at top left, rgba(200, 16, 46, 0.12), transparent 22%),
-      linear-gradient(180deg, #ffffff 0%, #f3f6ff 100%);
-    overflow: hidden;
-  }
-
-  .sheet {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    border-radius: 5.2mm;
-    overflow: hidden;
-    background: rgba(255, 255, 255, 0.92);
-    border: 0.35mm solid rgba(18, 35, 63, 0.14);
-    box-shadow: 0 8mm 22mm rgba(8, 17, 31, 0.12);
-  }
-
-  .hero {
-    display: grid;
-    grid-template-columns: 44mm 1fr;
-    gap: 8mm;
-    padding: 7.8mm 8.2mm 5.8mm;
-    background:
-      linear-gradient(130deg, rgba(8, 17, 31, 0.98), rgba(18, 35, 63, 0.95)),
-      linear-gradient(90deg, rgba(200, 16, 46, 0.12), rgba(44, 107, 255, 0.1));
-    color: var(--white);
-    position: relative;
-  }
-
-  .hero::after {
-    content: "";
-    position: absolute;
-    left: 10mm;
-    right: 10mm;
-    bottom: 0;
-    height: 0.8mm;
-    background: linear-gradient(90deg, var(--red), var(--white), var(--blue));
-    opacity: 0.85;
-  }
-
-  .hero-photo {
-    width: 41mm;
-    height: 50mm;
-    border-radius: 4mm;
-    object-fit: cover;
-    border: 0.5mm solid rgba(255, 255, 255, 0.16);
-    box-shadow: 0 5mm 12mm rgba(0, 0, 0, 0.22);
-  }
-
-  .hero-copy {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-width: 0;
-  }
-
-  .eyebrow {
-    margin: 0 0 1.5mm;
-    font-size: 2.8mm;
-    letter-spacing: 0.65mm;
-    text-transform: uppercase;
-    color: #dbe8ff;
-  }
-
-  h1 {
-    margin: 0;
-    font-size: 10.8mm;
-    line-height: 0.92;
-    letter-spacing: 0.25mm;
-    text-transform: uppercase;
-  }
-
-  .surname {
-    color: #ff8da0;
-  }
-
-  .summary {
-    margin: 2.2mm 0 2.6mm;
-    font-size: 3.15mm;
-    line-height: 1.32;
-    color: rgba(255, 255, 255, 0.97);
-    max-width: 128mm;
-  }
-
-  .hero-meta {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1.4mm 4mm;
-    font-size: 2.82mm;
-    color: rgba(255, 255, 255, 0.96);
-  }
-
-  .hero-meta strong {
-    color: #ffffff;
-  }
-
-  .content {
-    flex: 1;
-    display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
-    gap: 5.3mm;
-    padding: 5.2mm 8.2mm 4mm;
-    align-items: stretch;
-  }
-
-  .col {
-    min-width: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 4.6mm;
-  }
-
-  .section {
-    margin-bottom: 0;
-  }
-
-  .section:last-child {
-    margin-bottom: 0;
-  }
-
-  .section-title {
-    display: flex;
-    align-items: center;
-    gap: 2.2mm;
-    margin: 0 0 1.8mm;
-    font-size: 3.05mm;
-    letter-spacing: 0.42mm;
-    text-transform: uppercase;
-    color: var(--navy-soft);
-  }
-
-  .section-title::before {
-    content: "";
-    width: 6mm;
-    height: 0.8mm;
-    border-radius: 999px;
-    background: linear-gradient(90deg, var(--red), var(--blue));
-  }
-
-  .card {
-    background: var(--panel);
-    border: 0.35mm solid rgba(18, 35, 63, 0.18);
-    border-radius: 4mm;
-    padding: 2.95mm 3.15mm;
-  }
-
-  .entry + .entry {
-    margin-top: 2.2mm;
-    padding-top: 2.2mm;
-    border-top: 0.3mm solid rgba(18, 35, 63, 0.08);
-  }
-
-  .entry-head {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    gap: 3mm;
-    margin-bottom: 0.6mm;
-  }
-
-  .entry-title {
-    font-size: 3.02mm;
-    font-weight: 700;
-    color: var(--navy);
-  }
-
-  .entry-meta {
-    font-size: 2.55mm;
-    color: var(--red);
-    white-space: nowrap;
-  }
-
-  .entry-sub {
-    font-size: 2.65mm;
-    font-weight: 600;
-    color: #1147bf;
-    margin-bottom: 0.8mm;
-  }
-
-  .entry p {
-    margin: 0;
-    font-size: 2.55mm;
-    line-height: 1.3;
-    color: var(--muted);
-  }
-
-  .pill-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.2mm;
-  }
-
-  .pill {
-    padding: 0.95mm 1.8mm;
-    border-radius: 999px;
-    border: 0.3mm solid rgba(17, 71, 191, 0.24);
-    background: rgba(17, 71, 191, 0.12);
-    color: #10284b;
-    font-size: 2.35mm;
-    font-weight: 600;
-    line-height: 1.2;
-  }
-
-  .kpis {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 1.8mm;
-    margin-bottom: 3.2mm;
-  }
-
-  .kpi {
-    padding: 2.4mm 1.9mm;
-    border-radius: 4mm;
-    background: linear-gradient(180deg, rgba(17, 71, 191, 0.1), rgba(200, 16, 46, 0.05));
-    border: 0.35mm solid rgba(18, 35, 63, 0.14);
-  }
-
-  .kpi strong {
-    display: block;
-    font-size: 4.8mm;
-    line-height: 1;
-    color: var(--red);
-    margin-bottom: 0.8mm;
-  }
-
-  .kpi span {
-    display: block;
-    font-size: 2.35mm;
-    line-height: 1.18;
-    color: #1d3150;
-  }
-
-  .contact-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.2mm 3.2mm;
-    font-size: 2.6mm;
-    color: #162742;
-  }
-
-  .contact-item.full {
-    grid-column: 1 / -1;
-  }
-
-  .contact-item.nowrap {
-    white-space: nowrap;
-  }
-
-  .contact-grid strong {
-    color: #0e2039;
-  }
-
-  .footer {
-    margin-top: auto;
-    padding: 1.8mm 3mm 5.2mm;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-  }
-
-  .footer-brand {
-    text-align: right;
-    font-size: 2.65mm;
-    color: var(--navy-soft);
-    text-transform: uppercase;
-    letter-spacing: 0.18mm;
-  }
-
-  .footer-brand strong {
-    display: inline-flex;
-    align-items: center;
-    gap: 1.6mm;
-    margin-top: 0.5mm;
-    letter-spacing: 0.28mm;
-    color: var(--red);
-  }
-
-  .tri-mark {
-    display: inline-grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    width: 7px;
-    vertical-align: middle;
-    transform: translateY(-0.5px);
-  }
-
-  .tri-mark span {
-    width: 2px;
-    height: 2px;
-    border-radius: 50%;
-    background: var(--red);
-    display: block;
-  }
-
-  .tri-mark span:nth-child(1) {
-    grid-column: 1 / span 2;
-    justify-self: center;
-    align-self: start;
-  }
-
-  .tri-mark span:nth-child(2) {
-    grid-column: 1;
-    grid-row: 2;
-    justify-self: start;
-    align-self: end;
-  }
-
-  .tri-mark span:nth-child(3) {
-    grid-column: 2;
-    grid-row: 2;
-    justify-self: end;
-    align-self: end;
-  }
-
-  .tour-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.3mm 2.3mm;
-  }
-
-  .tour-item {
-    font-size: 2.35mm;
-    line-height: 1.22;
-    color: #20324d;
-  }
-
-  .tour-item strong {
-    color: var(--navy-soft);
-    display: block;
-    font-size: 2.5mm;
-    margin-bottom: 0.3mm;
-  }
-
-  .mini-text {
-    font-size: 2.35mm;
-    line-height: 1.24;
-    color: #1f304c;
-  }
-
-  .highlight-box {
-    margin-top: 1.8mm;
-    padding: 2mm 2.4mm;
-    border-radius: 3.8mm;
-    background: linear-gradient(90deg, rgba(200, 16, 46, 0.12), rgba(17, 71, 191, 0.14));
-    border: 0.3mm solid rgba(18, 35, 63, 0.18);
-  }
-
-  .left-highlight {
-    margin-top: 2.1mm;
-  }
-
-  .compact-list {
-    margin: 0;
-    padding-left: 3.6mm;
-    font-size: 2.5mm;
-    line-height: 1.24;
-    color: #1f314c;
-  }
-
-  .compact-list li + li {
-    margin-top: 0.7mm;
-  }
+  *{box-sizing:border-box}
+  html,body{width:210mm;height:297mm;margin:0;padding:0;font-family:"Segoe UI",Arial,sans-serif;background:#eef2fb;color:var(--ink)}
+  body{display:flex;justify-content:center}
+  .page{width:210mm;height:297mm;padding:4mm;background:linear-gradient(180deg,#f6f8ff,#eef2fb)}
+  .sheet{height:100%;border-radius:5mm;overflow:hidden;background:rgba(255,255,255,.98);border:.35mm solid rgba(19,33,51,.1);box-shadow:0 8mm 20mm rgba(11,24,48,.12)}
+  .hero{display:grid;grid-template-columns:42mm 1fr;gap:7mm;padding:7mm 8mm 6mm;background:linear-gradient(135deg,var(--navy),var(--navy-soft));color:#fff;position:relative}
+  .hero::after{content:"";position:absolute;left:8mm;right:8mm;bottom:0;height:.8mm;background:linear-gradient(90deg,var(--red),#f4f6ff,var(--blue))}
+  .photo{width:40mm;height:49mm;object-fit:cover;border-radius:4mm;border:.4mm solid rgba(255,255,255,.18)}
+  .eyebrow{margin:0 0 1.5mm;font-size:2.7mm;letter-spacing:.6mm;text-transform:uppercase;color:#cfe0ff}
+  h1{margin:0;font-size:10.6mm;line-height:.92;text-transform:uppercase}
+  .role{margin:2.4mm 0 2mm;font-size:4.1mm;font-weight:700;color:#f3f6ff}
+  .summary{margin:0;color:rgba(255,255,255,.82);font-size:3.2mm;line-height:1.55}
+  .meta{display:flex;gap:4mm;flex-wrap:wrap;margin-top:3mm;font-size:2.7mm;color:#dce7ff}
+  .meta span{padding:1.2mm 2.4mm;border-radius:999px;background:rgba(255,255,255,.08);border:.3mm solid rgba(255,255,255,.12)}
+  .content{display:grid;grid-template-columns:63mm 1fr;min-height:calc(100% - 65mm)}
+  .sidebar{background:#f5f7fc;padding:6.5mm 5.5mm 5.5mm;border-right:.35mm solid var(--line)}
+  .main{padding:6.5mm 6.5mm 5.5mm}
+  .section{margin-bottom:5.2mm}
+  .section-title{margin:0 0 2.4mm;font-size:3mm;font-weight:800;letter-spacing:.45mm;text-transform:uppercase;color:var(--navy-soft)}
+  .contact p,.sidebar p{margin:0 0 2mm;font-size:2.9mm;line-height:1.45;color:var(--muted)}
+  .skill-list,.plain-list{margin:0;padding-left:4mm}
+  .skill-list li,.plain-list li{margin:0 0 1.6mm;font-size:2.9mm;line-height:1.45}
+  .item{margin-bottom:4mm}
+  .item h3{margin:0 0 1mm;font-size:3.5mm}
+  .item .sub{margin:0 0 1.2mm;color:var(--muted);font-size:2.8mm;font-weight:600}
+  .item p{margin:0;color:var(--muted);font-size:2.9mm;line-height:1.5}
+  .edu-photo{display:grid;grid-template-columns:28mm 1fr;gap:3.2mm;align-items:center;padding:2.6mm;border:.35mm solid var(--line);border-radius:3.4mm;background:#fbfcff;margin-top:2.6mm}
+  .edu-photo img{width:100%;height:34mm;object-fit:cover;border-radius:2.6mm}
+  .edu-photo p{margin:0;font-size:2.75mm;line-height:1.45;color:var(--muted)}
 </style>
 </head>
 <body>
-  <main class="page">
-    <section class="sheet">
-      <header class="hero">
-        <img class="hero-photo" src="Hero.webp" alt="Foto profesional de Eliezer Prieto para Curriculum Vitae PDF">
-        <div class="hero-copy">
-          <div>
-            <p class="eyebrow">Tour Guide · Founder · Entrepreneur</p>
-            <h1>Eliezer <span class="surname">Prieto</span></h1>
-            <p class="summary">
-              Trilingual Cuban professional with scientific and humanistic training. I combine international tourism experience,
-              entrepreneurial leadership, customer service, logistics and technical thinking to create memorable experiences and solve real problems.
-            </p>
-          </div>
-          <div class="hero-meta">
-            <div><strong>Location:</strong> Boa Vista, Roraima, Brazil</div>
-            <div><strong>Availability:</strong> Immediate contract availability</div>
-            <div><strong>Languages:</strong> Spanish, English, Portuguese</div>
-            <div><strong>Focus:</strong> Tourism, operations, projects and premium service</div>
-          </div>
-        </div>
-      </header>
-
-      <section class="content">
-        <div class="col">
-          <div class="kpis">
-            <div class="kpi"><strong>3</strong><span>Languages spoken fluently</span></div>
-            <div class="kpi"><strong>2+</strong><span>Active tourism platforms</span></div>
-            <div class="kpi"><strong>1</strong><span>Startup founded</span></div>
-            <div class="kpi"><strong>7</strong><span>Student projects completed</span></div>
-          </div>
-
-          <section class="section">
-            <h2 class="section-title">Professional profile</h2>
-            <div class="card mini-text">
-              I am Eliezer Antonio Prieto Pantoja. I graduated from IPVCE Vladimir Ilich Lenin, studied three years of Nuclear Engineering at InSTEC,
-              and completed one year of humanistic studies at the Padre Félix Varela Institute. My path combines analysis, discipline and human connection.
-              I moved from physics and engineering into international tourism and entrepreneurship while keeping leadership, resilience and a results-driven mindset.
-            </div>
-          </section>
-
-          <section class="section">
-            <h2 class="section-title">Experience</h2>
-            <div class="card">
-              <article class="entry">
-                <div class="entry-head">
-                  <div class="entry-title">Professional Tour Guide</div>
-                  <div class="entry-meta">Civitatis · GuruWalk</div>
-                </div>
-                <div class="entry-sub">Ongoing experience</div>
-                <p>
-                  Design and delivery of tours in Spanish, English and Portuguese for international travelers. Specialized in cultural experiences,
-                  historical itineraries, storytelling and adapting each experience to the group.
-                </p>
-              </article>
-
-              <article class="entry">
-                <div class="entry-head">
-                  <div class="entry-title">Founder & CEO</div>
-                  <div class="entry-meta">Hasta Tu Puerta</div>
-                </div>
-                <div class="entry-sub">Package delivery startup</div>
-                <p>
-                  Creation, operation and growth of a logistics brand with an active social media presence. Leadership in operations, service, promotion,
-                  organization and digital marketing.
-                </p>
-              </article>
-
-              <article class="entry">
-                <div class="entry-head">
-                  <div class="entry-title">Demanding technical training</div>
-                  <div class="entry-meta">Nuclear Engineering</div>
-                </div>
-                <div class="entry-sub">3 years of study</div>
-                <p>
-                  Solid foundation in physics, calculus, thermodynamics, modeling and technical problem solving in complex environments.
-                </p>
-              </article>
-            </div>
-          </section>
-
-          <section class="section">
-            <h2 class="section-title">Featured tours</h2>
-            <div class="card">
-              <div class="tour-list">
-                <div class="tour-item"><strong>Bike Tour of Havana</strong>Urban and cultural experience for international travelers.</div>
-                <div class="tour-item"><strong>Cuban Revolution</strong>Historical narrative with a human and political perspective.</div>
-                <div class="tour-item"><strong>Complete Tour</strong>Full Havana route for different visitor profiles.</div>
-                <div class="tour-item"><strong>Night Bar Tour</strong>Social and local experience with close attention to detail.</div>
-                <div class="tour-item"><strong>Colonial · Casa Blanca</strong>Heritage routes with cultural context.</div>
-                <div class="tour-item"><strong>Contrasts · Yoruba</strong>Thematic, identity-based and multicultural itineraries.</div>
-              </div>
-              <div class="highlight-box mini-text left-highlight">
-                I am looking for opportunities where I can contribute judgment, communication, energy and real results in tourism, operations,
-                logistics, technical projects and high-level customer service. My differentiator is the way I combine science,
-                humanities, service and life experience to move naturally between technical and human contexts.
-              </div>
-            </div>
-          </section>
-        </div>
-
-        <div class="col">
-          <section class="section">
-            <h2 class="section-title">Key skills</h2>
-            <div class="card">
-              <div class="pill-row">
-                <span class="pill">Tour experience management</span>
-                <span class="pill">Intercultural communication</span>
-                <span class="pill">Premium customer service</span>
-                <span class="pill">Operations and logistics</span>
-                <span class="pill">Marketing and promotion</span>
-                <span class="pill">Leadership</span>
-                <span class="pill">Crisis resolution</span>
-                <span class="pill">Analysis and critical thinking</span>
-                <span class="pill">Teamwork</span>
-                <span class="pill">C++ programming</span>
-                <span class="pill">Python programming</span>
-                <span class="pill">Web programming</span>
-              </div>
-            </div>
-          </section>
-
-          <section class="section">
-            <h2 class="section-title">Education</h2>
-            <div class="card">
-              <article class="entry">
-                <div class="entry-title">IPVCE Vladimir Ilich Lenin</div>
-                <div class="entry-sub">High-performance scientific foundation · Cuba</div>
-                <p>Intensive training in mathematics, physics and applied sciences; discipline and analytical thinking.</p>
-              </article>
-
-              <article class="entry">
-                <div class="entry-title">InSTEC · Nuclear Engineering</div>
-                <div class="entry-sub">3 years of university education</div>
-                <ul class="compact-list">
-                  <li>Mathematics: Analysis I, II and III; Linear Algebra; Statistics; Differential Equations.</li>
-                  <li>Physics: Mechanics, Electromagnetism, Optics, Atomic Physics, Mathematical Physics and Neutronics I.</li>
-                  <li>Engineering and systems: Thermodynamics I and II, Fluids, Strength of Materials and Modeling.</li>
-                  <li>Technology: C++, Python and Web programming, technical drawing and advanced office tools.</li>
-                </ul>
-              </article>
-
-              <article class="entry">
-                <div class="entry-title">Padre Félix Varela Institute</div>
-                <div class="entry-sub">1 year of humanistic studies</div>
-                <p>Basic philosophy, literature, oral expression, ethics, text analysis and critical reflection.</p>
-              </article>
-            </div>
-          </section>
-
-          <section class="section">
-            <h2 class="section-title">Contact</h2>
-            <div class="card">
-              <div class="contact-grid">
-                <div class="contact-item"><strong>Email:</strong> eliezer.work46@gmail.com</div>
-                <div class="contact-item full nowrap"><strong>WhatsApp:</strong> +55 95 98438-6985</div>
-                <div class="contact-item"><strong>Instagram:</strong> @engineer_t46</div>
-                <div class="contact-item"><strong>Project:</strong> @hastatupuerta.cuba</div>
-                <div class="contact-item"><strong>City:</strong> Boa Vista, Roraima</div>
-                <div class="contact-item"><strong>Country:</strong> Brazil</div>
-              </div>
-            </div>
-          </section>
-        </div>
-      </section>
-
-      <footer class="footer">
-        <div class="footer-brand">
-          Made with
-          <strong>FAITH <span class="tri-mark"><span></span><span></span><span></span></span> HOPE <span class="tri-mark"><span></span><span></span><span></span></span> CHARITY <span class="tri-mark"><span></span><span></span><span></span></span></strong>
-        </div>
-      </footer>
-    </section>
-  </main>
+  <div class="page"><div class="sheet">
+    <header class="hero">
+      <img class="photo" src="assets/lisset-hero.png" alt="Lisset Gomez">
+      <div>
+        <p class="eyebrow">Boa Vista, Brazil</p>
+        <h1>Lisset Gomez</h1>
+        <p class="role">Customer service, front desk, administrative support and multilingual communication</p>
+        <p class="summary">Adaptable, approachable and reliable professional. Experience in hospitality, customer service, administration, education and management, supported by a strong academic foundation and a fast learning curve.</p>
+        <div class="meta"><span>Portuguese</span><span>Spanish</span><span>English</span><span>Basic Korean</span></div>
+      </div>
+    </header>
+    <div class="content">
+      <aside class="sidebar">
+        <section class="section contact">
+          <h2 class="section-title">Contact</h2>
+          <p><strong>Email:</strong><br>louissbts@gmail.com</p>
+          <p><strong>WhatsApp:</strong><br>+55 95 98430-6060</p>
+          <p><strong>City:</strong><br>Boa Vista, Roraima, Brazil</p>
+        </section>
+        <section class="section">
+          <h2 class="section-title">Strengths</h2>
+          <ul class="skill-list">
+            <li>Customer service and front desk</li>
+            <li>Administrative organization</li>
+            <li>Teamwork</li>
+            <li>Multilingual communication</li>
+            <li>Fast learning</li>
+          </ul>
+        </section>
+        <section class="section">
+          <h2 class="section-title">Languages</h2>
+          <ul class="plain-list">
+            <li>Native Spanish</li>
+            <li>Professional Portuguese</li>
+            <li>English B1</li>
+            <li>Basic Korean, TOPIK 2</li>
+          </ul>
+        </section>
+      </aside>
+      <main class="main">
+        <section class="section">
+          <h2 class="section-title">Experience</h2>
+          <div class="item"><h3>Hotel receptionist</h3><p class="sub">Boa Vista, Brazil</p><p>Guest support, reservations assistance, information handling and issue resolution in a multilingual environment.</p></div>
+          <div class="item"><h3>Restaurant customer service</h3><p class="sub">Boa Vista, Brazil</p><p>Customer-facing work in a dynamic setting with agility, warm service and team coordination.</p></div>
+          <div class="item"><h3>Founder of her own business</h3><p class="sub">Cuba</p><p>Import management, logistics, administration and operational and accounting follow-up.</p></div>
+          <div class="item"><h3>Professor and researcher</h3><p class="sub">University environment</p><p>Experience in teaching, research, analytical thinking and responsible work on complex projects.</p></div>
+        </section>
+        <section class="section">
+          <h2 class="section-title">Education</h2>
+          <div class="item"><h3>Upper secondary education</h3><p class="sub">Instituto Preuniversitario Vocacional de Ciencias Exactas de Las Tunas</p></div>
+          <div class="item"><h3>University degree in Nuclear Radiochemistry</h3><p class="sub">Instituto de Ciencias y Tecnologías Aplicadas, InSTEC</p><p>Scientific training with research in Quantum Chemistry and an undergraduate thesis developed in that field of study.</p></div>
+          <div class="edu-photo"><img src="assets/lisset-graduacion.jpeg" alt="Lisset Gomez graduation"><p>Photo from the university graduation day and degree completion at the University of Havana.</p></div>
+        </section>
+      </main>
+    </div>
+  </div></div>
 </body>
 </html>
