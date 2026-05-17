@@ -1,0 +1,97 @@
+{
+  "actions": { "download": "Download CV", "exporting": "Creating PDF...", "dark": "Dark mode", "light": "Light mode", "toggleTheme": "Toggle theme" },
+  "nav": [
+    { "label": "Profile", "href": "#profile" },
+    { "label": "Research", "href": "#research" },
+    { "label": "Experience", "href": "#experience" },
+    { "label": "Contact", "href": "#contact" }
+  ],
+  "profile": {
+    "name": "Lisset Dayana",
+    "familyName": "Gómez Pérez",
+    "location": "Boa Vista, Brazil",
+    "image": "https://raw.githubusercontent.com/loli7071/CV---Lisset/main/assets/lisset-graduacion.jpeg",
+    "photoAlt": "Professional portrait of Lisset Dayana Gómez Pérez",
+    "photoTitle": "Radiochemistry, science and service",
+    "photoText": "Top graduate of her class, scientific merit award recipient, with experience in teaching, research, customer service and operations.",
+    "summary": "Radiochemist and early-career researcher with experience in university teaching, computational chemistry, molecular modeling and professional service. She combines scientific rigor, critical thinking and humane communication for academic, scientific and organizational environments.",
+    "highlights": [
+      { "label": "Field", "value": "Radiochemistry and computational chemistry" },
+      { "label": "Focus", "value": "Research, teaching and management" },
+      { "label": "Languages", "value": "Spanish, English, Portuguese and Korean" }
+    ]
+  },
+  "sections": {
+    "profile": "Professional profile",
+    "profileEyebrow": "Summary",
+    "research": "Research projects",
+    "researchEyebrow": "Featured",
+    "experience": "Work experience",
+    "experienceEyebrow": "Career",
+    "education": "Education",
+    "educationEyebrow": "Academic background",
+    "skills": "Technical skills",
+    "skillsEyebrow": "Capabilities",
+    "languages": "Languages",
+    "certifications": "Certifications",
+    "publications": "Publications",
+    "events": "Scientific events",
+    "contact": "Contact"
+  },
+  "professionalProfile": "Scientific professional with a foundation in radiochemistry, analytical chemistry, quantum chemistry and molecular modeling. She has contributed to projects studying materials, bioactive systems and nanoscopic processes through classical methods, quantum methods and data analysis tools. Her teaching and service experience helps her translate complex knowledge into clear, organized and useful communication.",
+  "researchProjects": [
+    {
+      "title": "Modeling of nanoscopic structures and processes for materials and bioactivity",
+      "status": "Project PN223LH010-081",
+      "description": "Participation in research at the Faculty of Chemistry focused on modeling chemically and biologically relevant systems, with emphasis on prediction, structural analysis and molecular-scale property interpretation.",
+      "methodologyLabel": "Technologies and methodologies",
+      "methodologies": ["Molecular docking", "QSAR/QSPR", "3D-QSAR", "Molecular dynamics", "Quantum chemistry", "Big data"],
+      "resultsLabel": "Expected outcomes",
+      "results": ["Structure-activity relationship identification", "Support for bioactivity hypotheses", "Interpretable models for scientific decision-making"],
+      "image": "",
+      "imageFallback": "Molecular modeling",
+      "links": [{ "label": "Scientific repository", "href": "#" }]
+    },
+    {
+      "title": "Computational evaluation of compounds with potential biological activity",
+      "status": "Academic line",
+      "description": "Application of computational methods to study ligand-receptor interactions, pharmacokinetic properties and molecular descriptors useful in early-stage research.",
+      "methodologyLabel": "Technologies and methodologies",
+      "methodologies": ["Pharmacokinetics", "Spectroscopy", "Thermodynamics", "Analytical chemistry", "Molecular visualization"],
+      "resultsLabel": "Results",
+      "results": ["Candidate prioritization", "Comparative property analysis", "Communication of findings in scientific events"],
+      "image": "",
+      "imageFallback": "Bioactivity",
+      "links": []
+    }
+  ],
+  "experience": [
+    { "period": "Academic", "place": "University of Havana", "role": "University lecturer in Quantum Chemistry", "organization": "Faculty of Chemistry", "details": ["Higher education teaching in complex scientific subjects.", "Class preparation, assessment and academic support.", "Rigorous and clear communication for science students."] },
+    { "period": "Research", "place": "Faculty of Chemistry", "role": "Scientific project collaborator", "organization": "Project PN223LH010-081", "details": ["Modeling of nanoscopic structures and processes.", "Application of classical, quantum and data-based methods.", "Work focused on materials and bioactivity."] },
+    { "period": "Brazil", "place": "Boa Vista", "role": "Reception, sales and customer service", "organization": "Eco-Hotel, Shopping Center and Recanto da Peixada", "details": ["Direct customer service in multicultural contexts.", "Operational organization, registration, support and service.", "Work under pressure with warm communication."] },
+    { "period": "Entrepreneurship", "place": "Havana", "role": "Co-founder", "organization": "Hasta tu puerta", "details": ["Parcel management and operational follow-up.", "Administration, coordination and customer-need resolution.", "Practical process design for local service."] }
+  ],
+  "education": [
+    { "period": "University", "place": "Cuba", "degree": "Bachelor's Degree in Radiochemistry", "organization": "University of Havana", "details": ["Top graduate of her class.", "Academic index of 4.66 out of 6.", "Scientific merit award."] },
+    { "period": "Humanities", "place": "Havana", "degree": "Ecclesiastical and humanistic studies", "organization": "Instituto Padre Félix Varela", "details": ["Public speaking and Aristotelian logic.", "Ancient philosophy, economics and politics.", "Complementary cultural training for communication and professional judgment."] }
+  ],
+  "skills": [
+    { "title": "Chemistry and science", "items": ["Radiochemistry", "General chemistry", "Analytical chemistry", "Quantum chemistry", "Thermodynamics", "Spectroscopy"] },
+    { "title": "Computational", "items": ["Molecular docking", "QSAR/QSPR", "3D-QSAR", "Molecular dynamics", "Molecular modeling", "Data analysis"] },
+    { "title": "Teaching and communication", "items": ["Academic planning", "Public speaking", "Assessment", "Scientific communication", "Technical writing"] },
+    { "title": "Management and service", "items": ["Customer service", "Reception", "Sales", "Operations organization", "Teamwork"] }
+  ],
+  "languages": ["Native Spanish", "Intermediate/advanced English", "Functional Portuguese", "Basic/intermediate Korean"],
+  "certifications": ["Scientific merit award", "Top graduate in Radiochemistry", "Training in applied computational chemistry", "Humanistic and ecclesiastical training"],
+  "publications": ["Scientific abstract presented at chemistry and open science academic events.", "Academic support materials for quantum chemistry teaching.", "Editable space for DOI, articles, posters or conference proceedings."],
+  "events": ["QUIMICUBA 2024", "2nd Meeting of Basic Science Students", "2nd International Symposium on Open Science", "3rd International Congress on Scientific Research"],
+  "contact": {
+    "direct": "Direct details",
+    "email": "louissbts@gmail.com",
+    "phone": "+55 95 98439-6060",
+    "whatsappLink": "5595984396060",
+    "location": "Boa Vista, Roraima, Brazil",
+    "availabilityTitle": "Professional availability",
+    "availability": "Open to opportunities in research, teaching, laboratories, academic management, reception, administrative support and public service."
+  }
+}
