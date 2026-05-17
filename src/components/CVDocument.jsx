@@ -13,7 +13,7 @@ export default function CVDocument() {
   const contact = t('contact', { returnObjects: true });
 
   return (
-    <article id="cv-document" className="cv-page">
+    <article id="cv-document" className="cv-page" style={{ '--profile-bg': `url(${profileImage})` }}>
       <section className="hero-grid hero-grid-modern">
         <div className="hero-copy">
           <p className="eyebrow">{profile.location}</p>
