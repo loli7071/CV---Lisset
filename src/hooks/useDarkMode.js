@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 export function useDarkMode() {
-  const [isDark, setIsDark] = useState(() => localStorage.getItem('cv-theme') === 'dark');
+  const [isDark, setIsDark] = useState(() => localStorage.getItem('cv-theme') !== 'light');
 
   useEffect(() => {
     document.documentElement.classList.toggle('dark', isDark);

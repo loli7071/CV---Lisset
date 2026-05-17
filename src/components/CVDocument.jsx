@@ -1,9 +1,11 @@
 import { Award, GraduationCap, Languages, Mail, MapPin, Microscope, Phone, UserRound } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import profileImage from '../assets/lisset-profile.png';
 import ResearchProjects from './ResearchProjects.jsx';
 import Section from './Section.jsx';
 import SkillCloud from './SkillCloud.jsx';
 import TimelineItem from './TimelineItem.jsx';
+import ScientificVisuals from '../sections/ScientificVisuals.jsx';
 
 export default function CVDocument() {
   const { t } = useTranslation();
@@ -12,7 +14,7 @@ export default function CVDocument() {
 
   return (
     <article id="cv-document" className="cv-page">
-      <section className="hero-grid">
+      <section className="hero-grid hero-grid-modern">
         <div className="hero-copy">
           <p className="eyebrow">{profile.location}</p>
           <h1>{profile.name}<span>{profile.familyName}</span></h1>
@@ -27,7 +29,7 @@ export default function CVDocument() {
           </div>
         </div>
         <aside className="profile-photo" aria-label={profile.photoAlt}>
-          <img alt={profile.photoAlt} src={profile.image} />
+          <img alt={profile.photoAlt} src={profileImage} />
           <div className="photo-card">
             <strong>{profile.photoTitle}</strong>
             <p>{profile.photoText}</p>
@@ -48,6 +50,8 @@ export default function CVDocument() {
       <Section id="research" eyebrow={t('sections.researchEyebrow')} title={t('sections.research')} featured>
         <ResearchProjects projects={t('researchProjects', { returnObjects: true })} />
       </Section>
+
+      <ScientificVisuals content={t('visuals', { returnObjects: true })} />
 
       <div className="grid gap-4 lg:grid-cols-[1.1fr_0.9fr]">
         <Section id="experience" eyebrow={t('sections.experienceEyebrow')} title={t('sections.experience')}>

@@ -44,6 +44,22 @@
     "events": "Eventos científicos",
     "contact": "Contacto"
   },
+  "visuals": {
+    "eyebrow": "Visualización científica",
+    "title": "Modelación molecular y mapas de bioactividad",
+    "molecular": {
+      "kicker": "Docking molecular",
+      "title": "Modelación molecular",
+      "description": "Representación visual de interacciones ligando-receptor, sitio catalítico, coordinación metálica y energía de interacción.",
+      "alt": "Visualización científica de modelación molecular"
+    },
+    "bioactivity": {
+      "kicker": "Bioactividad computacional",
+      "title": "Mapas de actividad biológica",
+      "description": "Lectura visual de regiones de interacción, afinidad y patrones estructurales útiles para priorizar compuestos candidatos.",
+      "alt": "Mapa científico de actividad biológica"
+    }
+  },
   "professionalProfile": "Profesional científica con base en radioquímica, química analítica, química cuántica y modelación molecular. Ha participado en proyectos orientados al estudio de materiales, sistemas bioactivos y procesos nanoscópicos mediante métodos clásicos, cuánticos y herramientas de análisis de datos. Su experiencia docente y de servicio le permite traducir conocimiento complejo en comunicación clara, organizada y útil.",
   "researchProjects": [
     {

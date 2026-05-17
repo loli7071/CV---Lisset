@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Mail, MapPin, Moon, Phone, Sun } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import BackgroundFX from './components/BackgroundFX.jsx';
 import CVDocument from './components/CVDocument.jsx';
 import DownloadButton from './components/DownloadButton.jsx';
 import LanguageSelector from './components/LanguageSelector.jsx';
@@ -12,6 +13,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-[var(--page)] text-[var(--ink)] transition-colors duration-300">
+      <BackgroundFX />
       <header className="sticky top-0 z-30 border-b border-white/10 bg-slate-950/95 shadow-lg backdrop-blur">
         <div className="mx-auto flex w-[min(100%-32px,1180px)] flex-wrap items-center justify-between gap-3 py-3">
           <a className="text-xs font-bold uppercase tracking-[0.14em] text-white" href="#top">
