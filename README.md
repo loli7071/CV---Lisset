@@ -1,30 +1,40 @@
-# Lisset Gomez CV Landing Page
+# Lisset Dayana Gómez Pérez | Scientific CV
 
-Landing page profesional y CV multilingüe de Lisset Gomez.
+Aplicación React + TailwindCSS para un Curriculum Vitae científico y profesional multilingüe, optimizado para lectura web y exportación a PDF.
 
-## Qué incluye
+## Stack
 
-- Landing principal en [index.html](C:\Users\Bazoka46\Downloads\Portfolio\index.html)
-- CV imprimible en español, inglés y portugués
-- PDFs descargables por idioma
-- Assets fotográficos de perfil y graduación
+- React + Vite
+- TailwindCSS
+- i18next + react-i18next
+- Framer Motion
+- jsPDF + html2canvas
+- Lucide React
 
-## Archivos principales
+## Instalación
 
-- [index.html](C:\Users\Bazoka46\Downloads\Portfolio\index.html)
-- [cv-print.html](C:\Users\Bazoka46\Downloads\Portfolio\cv-print.html)
-- [cv-print-en.html](C:\Users\Bazoka46\Downloads\Portfolio\cv-print-en.html)
-- [cv-print-pt.html](C:\Users\Bazoka46\Downloads\Portfolio\cv-print-pt.html)
-- [Lisset-Gomez-CV-ES.pdf](C:\Users\Bazoka46\Downloads\Portfolio\Lisset-Gomez-CV-ES.pdf)
-- [Lisset-Gomez-CV-EN.pdf](C:\Users\Bazoka46\Downloads\Portfolio\Lisset-Gomez-CV-EN.pdf)
-- [Lisset-Gomez-CV-PT.pdf](C:\Users\Bazoka46\Downloads\Portfolio\Lisset-Gomez-CV-PT.pdf)
+```bash
+npm install
+npm run dev
+```
 
-## Publicación
+## Producción
 
-- Repositorio objetivo: [loli7071/CV---Lisset](https://github.com/loli7071/CV---Lisset)
-- Pensado para publicarse en GitHub Pages
+```bash
+npm run build
+npm run preview
+```
 
-## Notas
+## Edición del CV
 
-- Sitio estático sin build step
-- El botón `Download CV` descarga el PDF según el idioma activo
+Todo el contenido editable está en:
+
+- `src/translations/es.json`
+- `src/translations/en.json`
+- `src/translations/pt.json`
+
+La imagen de perfil se configura en `profile.image` dentro de cada JSON. El diseño replica la composición original del CV del 8 de abril: fondo cálido, panel principal claro, acentos verde/oro/azul/rojo y bloque fotográfico lateral.
+
+## PDF
+
+El botón `Descargar CV` exporta el área del CV en el idioma actualmente seleccionado. Para mejores resultados, usa Chrome o Edge y espera a que cargue la foto antes de descargar.

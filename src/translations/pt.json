@@ -1,0 +1,97 @@
+{
+  "actions": { "download": "Baixar CV", "exporting": "Gerando PDF...", "dark": "Modo escuro", "light": "Modo claro", "toggleTheme": "Alternar tema" },
+  "nav": [
+    { "label": "Perfil", "href": "#profile" },
+    { "label": "Pesquisa", "href": "#research" },
+    { "label": "Experiência", "href": "#experience" },
+    { "label": "Contato", "href": "#contact" }
+  ],
+  "profile": {
+    "name": "Lisset Dayana",
+    "familyName": "Gómez Pérez",
+    "location": "Boa Vista, Brasil",
+    "image": "https://raw.githubusercontent.com/loli7071/CV---Lisset/main/assets/lisset-graduacion.jpeg",
+    "photoAlt": "Fotografia profissional de Lisset Dayana Gómez Pérez",
+    "photoTitle": "Radioquímica, ciência e atendimento",
+    "photoText": "Melhor graduada do seu ano, prêmio ao mérito científico e experiência em docência, pesquisa, atendimento ao cliente e gestão.",
+    "summary": "Radioquímica e pesquisadora em formação com experiência em docência universitária, química computacional, modelagem molecular e atendimento profissional. Integra rigor científico, pensamento crítico e comunicação humana para colaborar em ambientes acadêmicos, científicos e organizacionais.",
+    "highlights": [
+      { "label": "Área", "value": "Radioquímica e química computacional" },
+      { "label": "Foco", "value": "Pesquisa, docência e gestão" },
+      { "label": "Idiomas", "value": "Espanhol, inglês, português e coreano" }
+    ]
+  },
+  "sections": {
+    "profile": "Perfil profissional",
+    "profileEyebrow": "Síntese",
+    "research": "Projetos de pesquisa",
+    "researchEyebrow": "Destaques",
+    "experience": "Experiência profissional",
+    "experienceEyebrow": "Trajetória",
+    "education": "Educação",
+    "educationEyebrow": "Formação",
+    "skills": "Habilidades técnicas",
+    "skillsEyebrow": "Competências",
+    "languages": "Idiomas",
+    "certifications": "Certificações",
+    "publications": "Publicações",
+    "events": "Eventos científicos",
+    "contact": "Contato"
+  },
+  "professionalProfile": "Profissional científica com base em radioquímica, química analítica, química quântica e modelagem molecular. Participou de projetos voltados ao estudo de materiais, sistemas bioativos e processos nanoscópicos por meio de métodos clássicos, quânticos e ferramentas de análise de dados. Sua experiência em docência e atendimento permite transformar conhecimento complexo em comunicação clara, organizada e útil.",
+  "researchProjects": [
+    {
+      "title": "Modelagem de estruturas e processos nanoscópicos para materiais e bioatividade",
+      "status": "Projeto PN223LH010-081",
+      "description": "Participação em pesquisa da Faculdade de Química focada na modelagem de sistemas de interesse químico e biológico, com ênfase em predição, análise estrutural e compreensão de propriedades em escala molecular.",
+      "methodologyLabel": "Tecnologias e metodologias",
+      "methodologies": ["Docking molecular", "QSAR/QSPR", "3D-QSAR", "Dinâmica molecular", "Química quântica", "Macrodados"],
+      "resultsLabel": "Resultados esperados",
+      "results": ["Identificação de relações estrutura-atividade", "Apoio a hipóteses de bioatividade", "Modelos interpretáveis para decisões científicas"],
+      "image": "",
+      "imageFallback": "Modelagem molecular",
+      "links": [{ "label": "Repositório científico", "href": "#" }]
+    },
+    {
+      "title": "Avaliação computacional de compostos com potencial atividade biológica",
+      "status": "Linha acadêmica",
+      "description": "Aplicação de métodos computacionais para estudar interações ligante-receptor, propriedades farmacocinéticas e descritores moleculares úteis em etapas iniciais de pesquisa.",
+      "methodologyLabel": "Tecnologias e metodologias",
+      "methodologies": ["Farmacocinética", "Espectroscopia", "Termodinâmica", "Química analítica", "Visualização molecular"],
+      "resultsLabel": "Resultados",
+      "results": ["Priorização de candidatos", "Análise comparativa de propriedades", "Comunicação de achados em eventos científicos"],
+      "image": "",
+      "imageFallback": "Bioatividade",
+      "links": []
+    }
+  ],
+  "experience": [
+    { "period": "Acadêmico", "place": "Universidade de Havana", "role": "Professora universitária de Química Quântica", "organization": "Faculdade de Química", "details": ["Docência superior em conteúdos científicos complexos.", "Preparação de aulas, avaliação e acompanhamento acadêmico.", "Comunicação rigorosa e clara para estudantes de ciências."] },
+    { "period": "Pesquisa", "place": "Faculdade de Química", "role": "Colaboradora de projeto científico", "organization": "Projeto PN223LH010-081", "details": ["Modelagem de estruturas e processos nanoscópicos.", "Aplicação de métodos clássicos, quânticos e baseados em dados.", "Trabalho orientado a materiais e bioatividade."] },
+    { "period": "Brasil", "place": "Boa Vista", "role": "Recepção, vendas e atendimento ao cliente", "organization": "Eco-Hotel, Shopping Center e Recanto da Peixada", "details": ["Atendimento direto a clientes em contextos multiculturais.", "Organização operacional, registro, suporte e serviço.", "Trabalho sob pressão com comunicação cordial."] },
+    { "period": "Empreendimento", "place": "Havana", "role": "Sócia fundadora", "organization": "Hasta tu puerta", "details": ["Gestão de encomendas e acompanhamento operacional.", "Administração, coordenação e solução de necessidades do cliente.", "Desenho de processos práticos para serviço local."] }
+  ],
+  "education": [
+    { "period": "Universidade", "place": "Cuba", "degree": "Licenciatura em Radioquímica", "organization": "Universidade de Havana", "details": ["Melhor graduada do seu ano.", "Índice acadêmico de 4,66 sobre 6.", "Prêmio ao mérito científico."] },
+    { "period": "Humanidades", "place": "Havana", "degree": "Estudos eclesiásticos e humanísticos", "organization": "Instituto Padre Félix Varela", "details": ["Oratória e lógica aristotélica.", "Filosofia antiga, economia e política.", "Formação cultural complementar para comunicação e critério profissional."] }
+  ],
+  "skills": [
+    { "title": "Química e ciência", "items": ["Radioquímica", "Química geral", "Química analítica", "Química quântica", "Termodinâmica", "Espectroscopia"] },
+    { "title": "Computacional", "items": ["Docking molecular", "QSAR/QSPR", "3D-QSAR", "Dinâmica molecular", "Modelagem molecular", "Análise de dados"] },
+    { "title": "Docência e comunicação", "items": ["Planejamento acadêmico", "Oratória", "Avaliação", "Comunicação científica", "Escrita técnica"] },
+    { "title": "Gestão e atendimento", "items": ["Atendimento ao cliente", "Recepção", "Vendas", "Organização operacional", "Trabalho em equipe"] }
+  ],
+  "languages": ["Espanhol nativo", "Inglês intermediário/avançado", "Português funcional", "Coreano básico/intermediário"],
+  "certifications": ["Prêmio ao mérito científico", "Melhor graduada em Radioquímica", "Formação em química computacional aplicada", "Formação humanística e eclesiástica"],
+  "publications": ["Resumo científico apresentado em eventos acadêmicos de química e ciência aberta.", "Materiais acadêmicos de apoio para docência em química quântica.", "Espaço editável para DOI, artigos, pôsteres ou anais de congresso."],
+  "events": ["QUIMICUBA 2024", "II Encontro de Estudantes de Ciências Básicas", "II Simpósio Internacional sobre Ciência Aberta", "III Congresso Internacional de Pesquisa Científica"],
+  "contact": {
+    "direct": "Dados diretos",
+    "email": "louissbts@gmail.com",
+    "phone": "+55 95 98439-6060",
+    "whatsappLink": "5595984396060",
+    "location": "Boa Vista, Roraima, Brasil",
+    "availabilityTitle": "Disponibilidade profissional",
+    "availability": "Aberta a oportunidades em pesquisa, docência, laboratórios, gestão acadêmica, recepção, suporte administrativo e atendimento ao público."
+  }
+}
