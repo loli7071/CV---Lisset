@@ -1,9 +1,9 @@
 {
   "actions": { "download": "Download CV", "exporting": "Creating PDF...", "dark": "Dark mode", "light": "Light mode", "toggleTheme": "Toggle theme" },
   "nav": [
-    { "label": "Profile", "href": "#profile" },
+    { "label": "About", "href": "#profile" },
+    { "label": "Specialties", "href": "#skills" },
     { "label": "Research", "href": "#research" },
-    { "label": "Visuals", "href": "#scientific-visuals" },
     { "label": "Experience", "href": "#experience" },
     { "label": "Contact", "href": "#contact" }
   ],
@@ -11,108 +11,91 @@
     "name": "Lisset Dayana",
     "familyName": "Gómez Pérez",
     "location": "Boa Vista, Brazil",
-    "ageLabel": "Age",
-    "age": "23 years old",
-    "professionalTitle": "BSc in Radiochemistry | Computational Chemistry | Molecular Modeling | Bioactivity and Nuclear Sciences",
+    "ageLabel": "Location",
+    "age": "Boa Vista, Brazil",
+    "professionalTitle": "BSc in Radiochemistry | Specialist in Computational Chemistry, Molecular Bioactivity and Nuclear Sciences",
     "photoAlt": "Professional portrait of Lisset Dayana Gómez Pérez",
-    "photoTitle": "Computational radiochemistry and bioactivity",
-    "photoText": "Top Radiochemistry graduate, scientific merit award recipient, focused on molecular research, teaching and nuclear sciences.",
-    "summary": "Radiochemistry and Computational Chemistry researcher with experience in molecular modeling, docking, QSAR/QSPR, molecular dynamics, bioactivity, nuclear techniques and university teaching. She connects scientific rigor, computational analysis and clear communication for medicinal chemistry, materials and nanoscopic-process research.",
+    "photoTitle": "Radiochemistry, molecular modeling and bioactivity",
+    "photoText": "Researcher focused on scientific solutions through computational chemistry, biomolecular simulation and applied nuclear technologies.",
+    "summary": "Researcher oriented toward scientific solutions through molecular modeling, computational chemistry and applied nuclear technologies. Experience in biomolecular simulations, QSAR/QSPR, molecular docking and bioactivity analysis with an interdisciplinary focus across chemistry, physics and computational sciences.",
     "highlights": [
-      { "label": "Project", "value": "PN223LH010-081" },
-      { "label": "Excellence", "value": "Academic index 4.66/6 and scientific merit" },
-      { "label": "Languages", "value": "Spanish, English, Korean and Portuguese" }
+      { "label": "Core field", "value": "Radiochemistry and nuclear sciences" },
+      { "label": "Computational focus", "value": "QSAR/QSPR, docking and molecular dynamics" },
+      { "label": "Profile", "value": "Molecular bioactivity and scientific research" }
     ]
   },
   "sections": {
-    "profile": "Professional profile",
-    "profileEyebrow": "Scientific summary",
-    "research": "Research projects",
-    "researchEyebrow": "Featured line",
+    "profile": "About me",
+    "profileEyebrow": "Scientific profile",
+    "research": "Research project",
+    "researchEyebrow": "Featured research",
     "experience": "Professional experience",
     "experienceEyebrow": "Career",
-    "education": "Education",
-    "educationEyebrow": "Academic background",
+    "education": "Complementary education",
+    "educationEyebrow": "Humanities and critical thinking",
     "skills": "Scientific specialties",
-    "skillsEyebrow": "Capabilities",
+    "skillsEyebrow": "Areas of expertise",
     "languages": "Languages",
     "certifications": "Recognition",
-    "publications": "Skills and qualities",
-    "events": "Scientific events",
+    "publications": "Skills and interests",
+    "events": "Scientific participation",
     "contact": "Contact"
   },
   "visuals": {
     "eyebrow": "Scientific visualization",
     "title": "Molecular modeling and bioactivity maps",
     "molecular": {
-      "kicker": "Molecular docking",
-      "title": "Molecular modeling",
-      "description": "Visualization of protein-ligand complexes, catalytic sites, metal coordination, hydrophobic fields and interaction energy.",
+      "kicker": "Molecular modeling",
+      "title": "Advanced biomolecular simulation",
+      "description": "Visual representation of protein-ligand interactions, catalytic sites, metal coordination, affinity fields and interaction energy.",
       "alt": "Scientific molecular modeling visualization"
     },
     "bioactivity": {
-      "kicker": "QSAR / Bioactivity",
+      "kicker": "Molecular bioactivity",
       "title": "Biological activity maps",
-      "description": "Integrated map of bioactivity, FRET, cell migration, pharmacophores, angiogenesis networks and QSAR analysis applied to MMP14.",
-      "alt": "Scientific bioactivity and QSAR map"
+      "description": "Visualization of bioactivity, QSAR, pharmacophores, cell migration and molecular networks associated with invasion and angiogenesis.",
+      "alt": "Scientific molecular bioactivity map"
     }
   },
-  "professionalProfile": "BSc in Radiochemistry with a strong foundation in physics, general chemistry, mathematical analysis, electrodynamics, optics, thermodynamics, statistics, analytical chemistry, applied radiochemistry, nuclear techniques, quantum chemistry, molecular spectroscopy, radiobiology, radiation safety, radiopharmacology, labeled-compound synthesis, radiotracer metabolism, molecular imaging and computational chemistry. Her profile connects nuclear sciences, molecular modeling, bioactivity and university teaching.",
+  "professionalProfile": "I am a Radiochemistry graduate with advanced scientific training in computational chemistry, molecular bioactivity and modeling of nanoscopic systems. My profile combines nuclear sciences, molecular simulation and computational methods applied to the study of bioactive compounds and advanced materials. I stand out for analytical thinking, research capacity and multidisciplinary adaptation, actively participating in scientific projects related to quantum chemistry, molecular dynamics and biomolecular-interaction modeling. I graduated as the top student of my Radiochemistry cohort, with scientific merit recognition for outstanding research results.",
   "researchProjects": [
     {
-      "title": "Modeling of nanoscopic structures and processes for materials and bioactivity",
+      "title": "Modeling of Nanoscopic Structures and Processes for Materials and Bioactivity: Classical, Quantum and Big-Data Methods",
       "status": "Code PN223LH010-081",
-      "description": "Project from the Faculty of Chemistry at the University of Havana focused on classical, quantum and big-data methods to study materials, bioactivity and nanoscopic systems.",
-      "methodologyLabel": "Technologies and methodologies",
-      "methodologies": ["Molecular docking", "QSAR/QSPR", "3D-QSAR", "Pharmacokinetics", "Molecular dynamics", "Big data"],
-      "resultsLabel": "Scientific outcomes",
-      "results": ["Structure-activity relationship characterization", "Models for bioactivity prediction", "Analysis of nanoscopic processes in materials and biological systems"],
+      "description": "Participation in research focused on molecular simulation and computational modeling applied to materials and bioactive compounds. Development of structural, energetic and pharmacological analyses through classical, quantum and big-data tools. Institution: Faculty of Chemistry — University of Havana.",
+      "methodologyLabel": "Work areas",
+      "methodologies": ["Computational Chemistry", "Molecular Dynamics", "QSAR/QSPR", "Molecular Modeling", "Bioactivity", "Quantum Methods", "Nanoscopic Simulation"],
+      "resultsLabel": "Scientific focus",
+      "results": ["Modeling of nanoscopic systems", "Structural and energetic analysis", "Computational study of bioactive compounds", "Application of classical, quantum and big-data methods"],
       "image": "",
       "imageFallback": "PN223LH010-081",
-      "links": []
-    },
-    {
-      "title": "Computational chemistry applied to molecular bioactivity",
-      "status": "Specialization line",
-      "description": "Use of molecular modeling, docking and computational descriptors to interpret ligand-receptor interactions, biological activity and pharmacokinetic properties.",
-      "methodologyLabel": "Applied areas",
-      "methodologies": ["Molecular modeling", "Pharmacophores", "Molecular spectroscopy", "Radiopharmacology", "Molecular imaging"],
-      "resultsLabel": "Focus",
-      "results": ["Candidate compound prioritization", "Activity-map visualization", "Computational support for medicinal chemistry research"],
-      "image": "",
-      "imageFallback": "Bioactivity",
       "links": []
     }
   ],
   "experience": [
-    { "period": "Teaching", "place": "University of Havana", "role": "University lecturer in Quantum Chemistry", "organization": "Faculty of Chemistry", "details": ["Advanced quantum chemistry teaching.", "Academic guidance and clear scientific communication.", "Teaching foundation connected to radiochemistry and computational chemistry."] },
-    { "period": "Research", "place": "University of Havana", "role": "Scientific research collaborator", "organization": "Project PN223LH010-081", "details": ["Modeling of nanoscopic structures and processes.", "Classical, quantum and big-data methods.", "Research focused on materials and bioactivity."] },
-    { "period": "Entrepreneurship", "place": "Havana", "role": "Co-founder", "organization": "Hasta tu puerta", "details": ["Parcel-service management and operations.", "Coordination, administration and client service.", "Practical solutions for logistics needs."] },
-    { "period": "Brazil", "place": "Boa Vista", "role": "Reception, sales, store operations and service", "organization": "Eco-Hotel, Shopping Center and Recanto da Peixada", "details": ["Receptionist at Eco-Hotel.", "Cumim at Recanto da Peixada.", "Store operator and salesperson at Shopping Center."] }
+    { "period": "University teaching", "place": "University of Havana", "role": "University Professor", "organization": "Quantum Chemistry", "details": ["Teaching in Quantum Chemistry.", "Strengthening theoretical foundations and computational methods applied to chemical sciences.", "Scientific communication for advanced academic training."] },
+    { "period": "Entrepreneurship", "place": "Havana", "role": "Co-founder", "organization": "Hasta Tu Puerta", "details": ["Co-founder of a logistics and parcel company.", "Operational management and administrative coordination.", "Process organization and customer service."] },
+    { "period": "International experience", "place": "Boa Vista, Brazil", "role": "Hospitality, commerce and food service", "organization": "Eco Hotel, Shopping Center and Recanto da Peixada", "details": ["Receptionist — Eco Hotel.", "Store operator — Shopping Center.", "Salesperson — Shopping Center.", "Cumim — Recanto da Peixada.", "Development of customer-service, multidisciplinary-work and intercultural-adaptation skills."] }
   ],
   "education": [
-    { "period": "University", "place": "Cuba", "degree": "BSc in Radiochemistry", "organization": "University of Havana", "details": ["Top graduate of her Radiochemistry class.", "Academic index of 4.66 out of 6.", "Scientific merit award for research results."] },
-    { "period": "Humanities", "place": "Havana", "degree": "Ecclesiastical and humanistic studies", "organization": "Padre Félix Varela Institute of Ecclesiastical Studies", "details": ["Courses in public speaking and Aristotelian logic.", "Ancient philosophy, economics and politics.", "Complementary formation for critical thinking and communication."] }
+    { "period": "Laurea", "place": "Havana", "degree": "Padre Félix Varela Institute of Ecclesiastical Studies", "organization": "Complementary education", "details": ["Public speaking.", "Aristotelian Logic.", "Ancient Philosophy.", "Economics.", "Politics."] }
   ],
   "skills": [
-    { "title": "Radiochemistry and nuclear sciences", "items": ["Applied radiochemistry", "Nuclear techniques", "Radiopharmacology", "Radioisotopes", "Radiobiology", "Radiation safety"] },
-    { "title": "Computational chemistry", "items": ["Molecular docking", "QSAR/QSPR", "3D-QSAR", "Pharmacokinetics", "Molecular dynamics", "Molecular modeling"] },
-    { "title": "Advanced chemistry and physics", "items": ["Quantum chemistry", "Thermodynamics", "Electrodynamics", "Optics", "Molecular spectroscopy", "Analytical chemistry"] },
-    { "title": "Analysis and methods", "items": ["Mathematical analysis I-IV", "Statistics", "Separation methods", "Ligand synthesis", "Nuclear analysis methods", "Molecular imaging"] },
-    { "title": "Qualities", "items": ["High standards", "Critical and self-critical thinking", "Fast learning", "Clear communication", "Scientific thinking"] },
-    { "title": "Cultural interests", "items": ["Dance", "Theater", "Music", "Art criticism"] }
+    { "title": "Radiochemistry and Nuclear Sciences", "items": ["Production and separation of radioisotopes", "Applied nuclear techniques", "Radiation safety", "Chemistry of radioactive elements", "Synthesis of labeled compounds", "Radiopharmacology", "Radiobiology", "Radiotracer metabolism", "Molecular imaging", "Medical physics", "Environmental radioactivity"] },
+    { "title": "Computational Chemistry and Molecular Modeling", "items": ["Molecular Docking", "QSAR / QSPR", "3D-QSAR", "Molecular Dynamics", "Molecular Modeling", "Computational pharmacokinetics", "Molecular bioactivity", "Protein-ligand interactions", "Advanced molecular simulation", "Computational molecular-affinity studies"] },
+    { "title": "Complementary Scientific Training", "items": ["Quantum Chemistry", "Statistical Thermodynamics", "Electrochemistry and Kinetics", "Molecular Spectroscopy", "Analytical Methods", "Mechanical Physics", "Electrodynamics", "Applied Statistics", "Optics", "Advanced Mathematical Analysis"] }
   ],
-  "languages": ["Spanish", "English", "Korean", "Portuguese"],
-  "certifications": ["Top Radiochemistry graduate", "Scientific merit award", "Academic index 4.66/6", "Ecclesiastical and humanistic formation"],
-  "publications": ["High standards, critical thinking and self-criticism.", "Fast learning and adaptability.", "Interests in dance, theater, music and art criticism."],
-  "events": ["International Congress of Chemistry, Biochemistry and Chemical Engineering QUIMICUBA 2024", "2nd Meeting of Basic Science Students", "2nd International Symposium on Open Science", "3rd International Congress on Scientific Research"],
+  "languages": ["Spanish — Native", "English — Intermediate / Advanced", "Portuguese — Intermediate", "Korean — Basic / Intermediate"],
+  "certifications": ["Top graduate in Radiochemistry", "Academic index: 4.66 / 5.00", "Scientific Merit Award for research results"],
+  "publications": ["Scientific Research", "Analytical Thinking", "Problem Solving", "Fast Learning", "Scientific Communication", "Multidisciplinary Work", "Academic Leadership", "Critical and Self-Critical Capacity", "Theater", "Dance", "Music", "Art Criticism", "Molecular Bioactivity", "Computational Modeling"],
+  "events": ["International Congress of Chemistry, Biochemistry and Chemical Engineering — QUIMICUBA 2024", "2nd Meeting of Basic Science Students", "2nd International Symposium on Open Science", "3rd International Congress on Scientific Research", "Participation in scientific spaces focused on chemistry, nuclear sciences, computational research and molecular bioactivity."],
   "contact": {
     "direct": "Direct details",
     "email": "louissbts@gmail.com",
     "phone": "+55 95 98439-6060",
     "whatsappLink": "5595984396060",
     "location": "Boa Vista, Brazil",
-    "availabilityTitle": "Professional availability",
-    "availability": "Available for research, teaching, computational chemistry, radiochemistry, laboratories, academic management, professional service and interdisciplinary scientific projects."
+    "availabilityTitle": "Research profile",
+    "availability": "Available for scientific projects in radiochemistry, computational chemistry, molecular bioactivity, molecular modeling, QSAR/QSPR, molecular dynamics and applied nuclear technologies."
   }
 }

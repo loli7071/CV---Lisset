@@ -52,11 +52,26 @@ export default function CVDocument() {
         <p className="body-text">{t('professionalProfile')}</p>
       </Section>
 
+      <Section id="skills" eyebrow={t('sections.skillsEyebrow')} title={t('sections.skills')}>
+        <SkillCloud groups={t('skills', { returnObjects: true })} />
+      </Section>
+
       <Section id="research" eyebrow={t('sections.researchEyebrow')} title={t('sections.research')} featured>
         <ResearchProjects projects={t('researchProjects', { returnObjects: true })} />
       </Section>
 
       <ScientificVisuals content={t('visuals', { returnObjects: true })} />
+
+      <div className="grid gap-4 lg:grid-cols-2">
+        <Section id="certifications" eyebrow={<Award size={16} />} title={t('sections.certifications')}>
+          <ul className="compact-list">{t('certifications', { returnObjects: true }).map((item) => <li key={item}>{item}</li>)}</ul>
+        </Section>
+        <Section id="events" eyebrow={<GraduationCap size={16} />} title={t('sections.events')}>
+          <div className="grid gap-3">
+            {t('events', { returnObjects: true }).map((event) => <div className="soft-card" key={event}>{event}</div>)}
+          </div>
+        </Section>
+      </div>
 
       <div className="grid gap-4 lg:grid-cols-[1.1fr_0.9fr]">
         <Section id="experience" eyebrow={t('sections.experienceEyebrow')} title={t('sections.experience')}>
@@ -71,27 +86,14 @@ export default function CVDocument() {
         </Section>
       </div>
 
-      <Section id="skills" eyebrow={t('sections.skillsEyebrow')} title={t('sections.skills')}>
-        <SkillCloud groups={t('skills', { returnObjects: true })} />
-      </Section>
-
-      <div className="grid gap-4 lg:grid-cols-3">
+      <div className="grid gap-4 lg:grid-cols-2">
         <Section id="languages" eyebrow={<Languages size={16} />} title={t('sections.languages')}>
           <ul className="compact-list">{t('languages', { returnObjects: true }).map((item) => <li key={item}>{item}</li>)}</ul>
-        </Section>
-        <Section id="certifications" eyebrow={<Award size={16} />} title={t('sections.certifications')}>
-          <ul className="compact-list">{t('certifications', { returnObjects: true }).map((item) => <li key={item}>{item}</li>)}</ul>
         </Section>
         <Section id="publications" eyebrow={<Microscope size={16} />} title={t('sections.publications')}>
           <ul className="compact-list">{t('publications', { returnObjects: true }).map((item) => <li key={item}>{item}</li>)}</ul>
         </Section>
       </div>
-
-      <Section id="events" eyebrow={<GraduationCap size={16} />} title={t('sections.events')}>
-        <div className="grid gap-3 md:grid-cols-2">
-          {t('events', { returnObjects: true }).map((event) => <div className="soft-card" key={event}>{event}</div>)}
-        </div>
-      </Section>
 
       <Section id="contact" eyebrow={<UserRound size={16} />} title={t('sections.contact')}>
         <div className="grid gap-3 md:grid-cols-2">
