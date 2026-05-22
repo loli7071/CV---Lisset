@@ -2,6 +2,7 @@
   "actions": {
     "download": "Descargar CV",
     "exporting": "Generando PDF...",
+    "exportError": "No se pudo generar el PDF. Inténtalo de nuevo.",
     "dark": "Modo oscuro",
     "light": "Modo claro",
     "toggleTheme": "Cambiar tema"

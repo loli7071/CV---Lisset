@@ -21,7 +21,12 @@ export default function DownloadButton({ targetId }) {
     );
   };
 
-  const downloadPdf = async () => {
+  const downloadPdf = async (event) => {
+    event?.preventDefault();
+    event?.stopPropagation();
+
+    if (isExporting) return;
+
     const target = document.getElementById(targetId);
     if (!target) return;
 
@@ -52,6 +57,11 @@ export default function DownloadButton({ targetId }) {
           }
         },
       });
+
+      if (canvas.width <= 0 || canvas.height <= 0) {
+        throw new Error('El contenido del CV no pudo renderizarse para PDF.');
+      }
+
       const pdf = new jsPDF('p', 'mm', 'a4');
       const pageWidth = pdf.internal.pageSize.getWidth();
       const pageHeight = pdf.internal.pageSize.getHeight();
@@ -64,6 +74,9 @@ export default function DownloadButton({ targetId }) {
         const sliceHeight = Math.min(pageCanvasHeight, canvas.height - sourceY);
         sliceCanvas.height = sliceHeight;
         const pageContext = sliceCanvas.getContext('2d');
+        if (!pageContext) {
+          throw new Error('No se pudo preparar el lienzo del PDF.');
+        }
         pageContext.clearRect(0, 0, sliceCanvas.width, sliceCanvas.height);
         pageContext.drawImage(canvas, 0, sourceY, canvas.width, sliceHeight, 0, 0, canvas.width, sliceHeight);
 
@@ -79,7 +92,18 @@ export default function DownloadButton({ targetId }) {
         pdf.addPage();
       }
 
-      pdf.save(`Lisset-Dayana-Gomez-Perez-CV-${i18n.language.toUpperCase()}.pdf`);
+      const blob = pdf.output('blob');
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = `Lisset-Dayana-Gomez-Perez-CV-${i18n.language.toUpperCase()}.pdf`;
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      URL.revokeObjectURL(url);
+    } catch (error) {
+      console.error('PDF export failed', error);
+      window.alert(t('actions.exportError'));
     } finally {
       document.body.classList.remove('pdf-exporting');
       setIsExporting(false);
@@ -87,7 +111,7 @@ export default function DownloadButton({ targetId }) {
   };
 
   return (
-    <button className="download-button" disabled={isExporting} onClick={downloadPdf} type="button">
+    <button aria-busy={isExporting} className="download-button" disabled={isExporting} onClick={downloadPdf} type="button">
       <Download size={17} />
       {isExporting ? t('actions.exporting') : t('actions.download')}
     </button>

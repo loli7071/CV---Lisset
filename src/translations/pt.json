@@ -1,5 +1,5 @@
 {
-  "actions": { "download": "Baixar CV", "exporting": "Gerando PDF...", "dark": "Modo escuro", "light": "Modo claro", "toggleTheme": "Alternar tema" },
+  "actions": { "download": "Baixar CV", "exporting": "Gerando PDF...", "exportError": "Não foi possível gerar o PDF. Tente novamente.", "dark": "Modo escuro", "light": "Modo claro", "toggleTheme": "Alternar tema" },
   "nav": [
     { "label": "Sobre mim", "href": "#profile" },
     { "label": "Especialidades", "href": "#skills" },

@@ -35,10 +35,6 @@ export default function CVDocument() {
         </div>
         <aside className="profile-photo" aria-label={profile.photoAlt}>
           <img alt={profile.photoAlt} src={profileImage} />
-          <div className="photo-card">
-            <strong>{profile.photoTitle}</strong>
-            <p>{profile.photoText}</p>
-          </div>
         </aside>
       </section>
 

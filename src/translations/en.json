@@ -1,5 +1,5 @@
 {
-  "actions": { "download": "Download CV", "exporting": "Creating PDF...", "dark": "Dark mode", "light": "Light mode", "toggleTheme": "Toggle theme" },
+  "actions": { "download": "Download CV", "exporting": "Creating PDF...", "exportError": "The PDF could not be generated. Please try again.", "dark": "Dark mode", "light": "Light mode", "toggleTheme": "Toggle theme" },
   "nav": [
     { "label": "About", "href": "#profile" },
     { "label": "Specialties", "href": "#skills" },
