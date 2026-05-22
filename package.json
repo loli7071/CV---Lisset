@@ -4,7 +4,8 @@
     "dev": "vite --host 0.0.0.0",
     "build": "vite build",
     "preview": "vite preview --host 0.0.0.0",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@tailwindcss/vite": "latest",
@@ -17,14 +18,19 @@
     "react": "latest",
     "react-dom": "latest",
     "react-i18next": "latest",
+    "react-icons": "latest",
     "tailwindcss": "latest",
     "vite": "latest"
   },
   "devDependencies": {
     "@eslint/js": "latest",
+    "@types/react": "^19.2.15",
+    "@types/react-dom": "^19.2.3",
+    "@typescript-eslint/parser": "^8.59.4",
     "eslint": "latest",
     "eslint-plugin-react-hooks": "latest",
     "eslint-plugin-react-refresh": "latest",
-    "globals": "latest"
+    "globals": "latest",
+    "typescript": "latest"
   }
 }

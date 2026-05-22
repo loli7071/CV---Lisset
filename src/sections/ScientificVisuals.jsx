@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import bioactivityImage from '../assets/bioactivity-map.png';
 import molecularImage from '../assets/molecular-modeling.png';
 
 export default function ScientificVisuals({ content }) {
@@ -10,7 +11,7 @@ export default function ScientificVisuals({ content }) {
     },
     {
       ...content.bioactivity,
-      image: molecularImage,
+      image: bioactivityImage,
       className: 'visual-card visual-card-map',
     },
   ];

@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Mail, MapPin, Moon, Phone, Sun } from 'lucide-react';
+import { FaAtom } from 'react-icons/fa6';
 import { useTranslation } from 'react-i18next';
 import BackgroundFX from './components/BackgroundFX.jsx';
 import CVDocument from './components/CVDocument.jsx';
@@ -10,17 +11,19 @@ import { useDarkMode } from './hooks/useDarkMode.js';
 export default function App() {
   const { t } = useTranslation();
   const { isDark, toggleDarkMode } = useDarkMode();
+  const navItems = t('nav', { returnObjects: true }) as Array<{ label: string; href: string }>;
 
   return (
-    <div className="min-h-screen bg-[var(--page)] text-[var(--ink)] transition-colors duration-300">
+    <div className="relative min-h-screen overflow-hidden bg-[var(--page)] text-[var(--ink)] transition-colors duration-300">
       <BackgroundFX />
       <header className="sticky top-0 z-30 border-b border-white/10 bg-slate-950/95 shadow-lg backdrop-blur">
         <div className="mx-auto flex w-[min(100%-32px,1180px)] flex-wrap items-center justify-between gap-3 py-3">
-          <a className="text-xs font-bold uppercase tracking-[0.14em] text-white" href="#top">
-            {t('profile.name')}
+          <a className="brand-lockup" href="#top">
+            <FaAtom aria-hidden="true" />
+            <span>{t('profile.name')} {t('profile.familyName')}</span>
           </a>
           <nav className="hidden flex-wrap gap-4 text-[0.72rem] font-semibold uppercase tracking-[0.12em] text-white/75 md:flex">
-            {t('nav', { returnObjects: true }).map((item) => (
+            {navItems.map((item) => (
               <a className="transition hover:text-white" href={item.href} key={item.href}>
                 {item.label}
               </a>

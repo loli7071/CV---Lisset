@@ -9,6 +9,7 @@
   "nav": [
     { "label": "Perfil", "href": "#profile" },
     { "label": "Investigación", "href": "#research" },
+    { "label": "Visuales", "href": "#scientific-visuals" },
     { "label": "Experiencia", "href": "#experience" },
     { "label": "Contacto", "href": "#contact" }
   ],
@@ -16,31 +17,33 @@
     "name": "Lisset Dayana",
     "familyName": "Gómez Pérez",
     "location": "Boa Vista, Brasil",
-    "image": "https://raw.githubusercontent.com/loli7071/CV---Lisset/main/assets/lisset-graduacion.jpeg",
+    "ageLabel": "Edad",
+    "age": "23 años",
+    "professionalTitle": "Licenciada en Radioquímica | Química Computacional | Modelación Molecular | Bioactividad y Ciencias Nucleares",
     "photoAlt": "Fotografía profesional de Lisset Dayana Gómez Pérez",
-    "photoTitle": "Radioquímica, ciencia y servicio",
-    "photoText": "Mejor graduada de su año, premio al mérito científico y experiencia en docencia, investigación, atención al cliente y gestión.",
-    "summary": "Radioquímica e investigadora en formación con experiencia en docencia universitaria, química computacional, modelación molecular y servicio profesional. Integra rigor científico, pensamiento crítico y una comunicación humana para colaborar en entornos académicos, científicos y organizacionales.",
+    "photoTitle": "Radioquímica computacional y bioactividad",
+    "photoText": "Mejor graduada de Radioquímica, premio al mérito científico y perfil orientado a investigación molecular, docencia y ciencias nucleares.",
+    "summary": "Investigadora en Radioquímica y Química Computacional con experiencia en modelación molecular, docking, QSAR/QSPR, dinámica molecular, bioactividad, técnicas nucleares y docencia universitaria. Integra rigor científico, análisis computacional y comunicación clara para proyectos de química medicinal, materiales y procesos nanoscópicos.",
     "highlights": [
-      { "label": "Área", "value": "Radioquímica y química computacional" },
-      { "label": "Enfoque", "value": "Investigación, docencia y gestión" },
-      { "label": "Idiomas", "value": "Español, inglés, portugués y coreano" }
+      { "label": "Proyecto", "value": "PN223LH010-081" },
+      { "label": "Excelencia", "value": "Índice académico 4.66/6 y mérito científico" },
+      { "label": "Idiomas", "value": "Español, inglés, coreano y portugués" }
     ]
   },
   "sections": {
     "profile": "Perfil profesional",
-    "profileEyebrow": "Síntesis",
+    "profileEyebrow": "Síntesis científica",
     "research": "Proyectos de investigación",
-    "researchEyebrow": "Muy destacados",
-    "experience": "Experiencia laboral",
+    "researchEyebrow": "Línea destacada",
+    "experience": "Experiencia profesional",
     "experienceEyebrow": "Trayectoria",
     "education": "Educación",
     "educationEyebrow": "Formación",
-    "skills": "Habilidades técnicas",
+    "skills": "Especialidades científicas",
     "skillsEyebrow": "Competencias",
     "languages": "Idiomas",
-    "certifications": "Certificaciones",
-    "publications": "Publicaciones",
+    "certifications": "Reconocimientos",
+    "publications": "Habilidades y cualidades",
     "events": "Eventos científicos",
     "contact": "Contacto"
   },
@@ -50,38 +53,38 @@
     "molecular": {
       "kicker": "Docking molecular",
       "title": "Modelación molecular",
-      "description": "Representación visual de interacciones ligando-receptor, sitio catalítico, coordinación metálica y energía de interacción.",
+      "description": "Visualización de complejos proteína-ligando, sitio catalítico, coordinación metálica, campos hidrofóbicos y energía de interacción.",
       "alt": "Visualización científica de modelación molecular"
     },
     "bioactivity": {
-      "kicker": "Bioactividad computacional",
+      "kicker": "QSAR / Bioactividad",
       "title": "Mapas de actividad biológica",
-      "description": "Lectura visual de regiones de interacción, afinidad y patrones estructurales útiles para priorizar compuestos candidatos.",
-      "alt": "Mapa científico de actividad biológica"
+      "description": "Mapa integrado de bioactividad, FRET, migración celular, farmacóforos, redes de angiogénesis y análisis QSAR aplicado a MMP14.",
+      "alt": "Mapa científico de actividad biológica y QSAR"
     }
   },
-  "professionalProfile": "Profesional científica con base en radioquímica, química analítica, química cuántica y modelación molecular. Ha participado en proyectos orientados al estudio de materiales, sistemas bioactivos y procesos nanoscópicos mediante métodos clásicos, cuánticos y herramientas de análisis de datos. Su experiencia docente y de servicio le permite traducir conocimiento complejo en comunicación clara, organizada y útil.",
+  "professionalProfile": "Licenciada en Radioquímica con formación fuerte en física, química general, análisis matemático, electrodinámica, óptica, termodinámica, estadística, química analítica, radioquímica aplicada, técnicas nucleares, química cuántica, espectroscopia molecular, radiobiología, seguridad radiológica, radiofarmacología, síntesis de compuestos marcados, metabolismo de radiotrazadores, imagenología molecular y química computacional. Su perfil conecta ciencias nucleares, modelación molecular, bioactividad y docencia universitaria.",
   "researchProjects": [
     {
       "title": "Modelación de estructuras y procesos nanoscópicos para materiales y bioactividad",
-      "status": "Proyecto PN223LH010-081",
-      "description": "Participación en investigación de la Facultad de Química enfocada en la modelación de sistemas de interés químico y biológico, con énfasis en predicción, análisis estructural y comprensión de propiedades a escala molecular.",
+      "status": "Código PN223LH010-081",
+      "description": "Proyecto de la Facultad de Química de la Universidad de La Habana enfocado en métodos clásicos, cuánticos y con macrodatos para estudiar materiales, bioactividad y sistemas nanoscópicos.",
       "methodologyLabel": "Tecnologías y metodologías",
-      "methodologies": ["Docking molecular", "QSAR/QSPR", "3D-QSAR", "Dinámica molecular", "Química cuántica", "Macrodatos"],
-      "resultsLabel": "Resultados esperados",
-      "results": ["Identificación de relaciones estructura-actividad", "Apoyo a hipótesis de bioactividad", "Modelos interpretables para toma de decisiones científicas"],
+      "methodologies": ["Docking molecular", "QSAR/QSPR", "3D-QSAR", "Farmacocinética", "Dinámica molecular", "Macrodatos"],
+      "resultsLabel": "Resultados científicos",
+      "results": ["Caracterización de relaciones estructura-actividad", "Modelos para predicción de bioactividad", "Análisis de procesos nanoscópicos en materiales y sistemas biológicos"],
       "image": "",
-      "imageFallback": "Modelación molecular",
-      "links": [{ "label": "Repositorio científico", "href": "#" }]
+      "imageFallback": "PN223LH010-081",
+      "links": []
     },
     {
-      "title": "Evaluación computacional de compuestos con potencial actividad biológica",
-      "status": "Línea académica",
-      "description": "Aplicación de métodos computacionales para estudiar interacciones ligando-receptor, propiedades farmacocinéticas y descriptores moleculares útiles en etapas tempranas de investigación.",
-      "methodologyLabel": "Tecnologías y metodologías",
-      "methodologies": ["Farmacocinética", "Espectroscopia", "Termodinámica", "Química analítica", "Visualización molecular"],
-      "resultsLabel": "Resultados",
-      "results": ["Priorización de candidatos", "Análisis comparativo de propiedades", "Comunicación de hallazgos en eventos científicos"],
+      "title": "Química computacional aplicada a bioactividad molecular",
+      "status": "Línea de especialización",
+      "description": "Aplicación de modelación molecular, docking y descriptores computacionales para interpretar interacciones ligando-receptor, actividad biológica y propiedades farmacocinéticas.",
+      "methodologyLabel": "Áreas aplicadas",
+      "methodologies": ["Modelación molecular", "Farmacóforos", "Espectroscopia molecular", "Radiofarmacología", "Imagen molecular"],
+      "resultsLabel": "Enfoque",
+      "results": ["Priorización de compuestos candidatos", "Visualización de mapas de actividad", "Soporte computacional para investigación en química medicinal"],
       "image": "",
       "imageFallback": "Bioactividad",
       "links": []
@@ -89,32 +92,32 @@
   ],
   "experience": [
     {
-      "period": "Académico",
+      "period": "Docencia",
       "place": "Universidad de La Habana",
       "role": "Profesora universitaria de Química Cuántica",
       "organization": "Facultad de Química",
-      "details": ["Docencia superior en contenidos científicos complejos.", "Preparación de clases, evaluación y acompañamiento académico.", "Comunicación rigurosa y clara para estudiantes de ciencias."]
+      "details": ["Impartición de contenidos avanzados de química cuántica.", "Acompañamiento académico y comunicación científica clara.", "Base docente conectada con radioquímica y química computacional."]
     },
     {
       "period": "Investigación",
-      "place": "Facultad de Química",
-      "role": "Colaboradora de proyecto científico",
+      "place": "Universidad de La Habana",
+      "role": "Colaboradora en investigación científica",
       "organization": "Proyecto PN223LH010-081",
-      "details": ["Modelación de estructuras y procesos nanoscópicos.", "Aplicación de métodos clásicos, cuánticos y análisis con datos.", "Trabajo orientado a materiales y bioactividad."]
-    },
-    {
-      "period": "Brasil",
-      "place": "Boa Vista",
-      "role": "Recepción, ventas y atención al cliente",
-      "organization": "Eco-Hotel, Shopping Center y Recanto da Peixada",
-      "details": ["Atención directa a clientes en contextos multiculturales.", "Organización operativa, registro, soporte y servicio.", "Trabajo bajo presión con comunicación cordial."]
+      "details": ["Modelación de estructuras y procesos nanoscópicos.", "Métodos clásicos, cuánticos y con macrodatos.", "Investigación orientada a materiales y bioactividad."]
     },
     {
       "period": "Emprendimiento",
       "place": "La Habana",
       "role": "Socia fundadora",
       "organization": "Hasta tu puerta",
-      "details": ["Gestión de paquetería y seguimiento operativo.", "Administración, coordinación y solución de necesidades del cliente.", "Diseño de procesos prácticos para servicio local."]
+      "details": ["Gestión de paquetería y operación de servicio.", "Coordinación, administración y atención a clientes.", "Resolución práctica de necesidades logísticas."]
+    },
+    {
+      "period": "Brasil",
+      "place": "Boa Vista",
+      "role": "Recepción, ventas, operación de tienda y servicio",
+      "organization": "Eco-Hotel, Shopping Center y Recanto da Peixada",
+      "details": ["Recepcionista en Eco-Hotel.", "Cumim en Recanto da Peixada.", "Operadora de loja y vendedora en Shopping Center."]
     }
   ],
   "education": [
@@ -123,33 +126,35 @@
       "place": "Cuba",
       "degree": "Licenciatura en Radioquímica",
       "organization": "Universidad de La Habana",
-      "details": ["Mejor graduada de su año.", "Índice académico de 4.66 sobre 6.", "Premio al mérito científico."]
+      "details": ["Mejor graduada de su año en Radioquímica.", "Índice académico de 4.66 sobre 6.", "Premio al mérito científico por resultados de investigación."]
     },
     {
       "period": "Humanidades",
       "place": "La Habana",
       "degree": "Estudios eclesiásticos y humanísticos",
-      "organization": "Instituto Padre Félix Varela",
-      "details": ["Oratoria y lógica aristotélica.", "Filosofía antigua, economía y política.", "Formación cultural complementaria para comunicación y criterio profesional."]
+      "organization": "Instituto de Estudios Eclesiásticos Padre Félix Varela",
+      "details": ["Cursos de oratoria y lógica aristotélica.", "Filosofía antigua, economía y política.", "Formación complementaria para pensamiento crítico y comunicación."]
     }
   ],
   "skills": [
-    { "title": "Química y ciencia", "items": ["Radioquímica", "Química general", "Química analítica", "Química cuántica", "Termodinámica", "Espectroscopia"] },
-    { "title": "Computacional", "items": ["Docking molecular", "QSAR/QSPR", "3D-QSAR", "Dinámica molecular", "Modelación molecular", "Análisis de datos"] },
-    { "title": "Docencia y comunicación", "items": ["Planificación académica", "Oratoria", "Evaluación", "Comunicación científica", "Escritura técnica"] },
-    { "title": "Gestión y servicio", "items": ["Atención al cliente", "Recepción", "Ventas", "Organización operativa", "Trabajo en equipo"] }
+    { "title": "Radioquímica y ciencias nucleares", "items": ["Radioquímica aplicada", "Técnicas nucleares", "Radiofarmacología", "Radioisótopos", "Radiobiología", "Seguridad radiológica"] },
+    { "title": "Química computacional", "items": ["Docking molecular", "QSAR/QSPR", "3D-QSAR", "Farmacocinética", "Dinámica molecular", "Modelación molecular"] },
+    { "title": "Química y física avanzada", "items": ["Química cuántica", "Termodinámica", "Electrodinámica", "Óptica", "Espectroscopia molecular", "Química analítica"] },
+    { "title": "Análisis y métodos", "items": ["Análisis matemático I-IV", "Estadística", "Métodos de separación", "Síntesis de ligandos", "Métodos nucleares de análisis", "Imagen molecular"] },
+    { "title": "Cualidades", "items": ["Alto nivel de exigencia", "Crítica y autocrítica", "Rápido aprendizaje", "Comunicación clara", "Pensamiento científico"] },
+    { "title": "Intereses culturales", "items": ["Danza", "Teatro", "Música", "Crítica de arte"] }
   ],
-  "languages": ["Español nativo", "Inglés intermedio/avanzado", "Portugués funcional", "Coreano básico/intermedio"],
-  "certifications": ["Premio al mérito científico", "Mejor graduada de Radioquímica", "Formación en química computacional aplicada", "Formación humanística y eclesiástica"],
-  "publications": ["Resumen científico presentado en eventos académicos de química y ciencia abierta.", "Materiales académicos de apoyo para docencia en química cuántica.", "Espacio editable para DOI, artículos, posters o memorias de congreso."],
-  "events": ["QUIMICUBA 2024", "II Encuentro de Estudiantes de Ciencias Básicas", "II Simposio Internacional sobre Ciencia Abierta", "III Congreso Internacional de Investigación Científica"],
+  "languages": ["Español", "Inglés", "Coreano", "Portugués"],
+  "certifications": ["Mejor graduada de Radioquímica", "Premio al mérito científico", "Índice académico 4.66/6", "Formación eclesiástica y humanística"],
+  "publications": ["Alto nivel de exigencia, crítica y autocrítica.", "Rápido aprendizaje y adaptabilidad.", "Intereses en danza, teatro, música y crítica de arte."],
+  "events": ["International Congress of Chemistry, Biochemistry and Chemical Engineering QUIMICUBA 2024", "II Encuentro de Estudiantes de Ciencias Básicas", "II Simposio Internacional sobre Ciencia Abierta", "III Congreso Internacional de Investigación Científica"],
   "contact": {
     "direct": "Datos directos",
     "email": "louissbts@gmail.com",
     "phone": "+55 95 98439-6060",
     "whatsappLink": "5595984396060",
-    "location": "Boa Vista, Roraima, Brasil",
+    "location": "Boa Vista, Brasil",
     "availabilityTitle": "Disponibilidad profesional",
-    "availability": "Abierta a oportunidades en investigación, docencia, laboratorios, gestión académica, recepción, soporte administrativo y atención al público."
+    "availability": "Disponible para investigación, docencia, química computacional, radioquímica, laboratorios, gestión académica, atención profesional y proyectos científicos interdisciplinarios."
   }
 }

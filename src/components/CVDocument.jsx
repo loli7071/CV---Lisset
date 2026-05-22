@@ -18,8 +18,13 @@ export default function CVDocument() {
         <div className="hero-copy">
           <p className="eyebrow">{profile.location}</p>
           <h1>{profile.name}<span>{profile.familyName}</span></h1>
+          <p className="professional-title">{profile.professionalTitle}</p>
           <p className="lead">{profile.summary}</p>
           <div className="hero-meta">
+            <div className="meta">
+              <small>{profile.ageLabel}</small>
+              <strong>{profile.age}</strong>
+            </div>
             {profile.highlights.map((item) => (
               <div className="meta" key={item.label}>
                 <small>{item.label}</small>

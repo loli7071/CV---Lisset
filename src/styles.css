@@ -110,7 +110,7 @@ h1 span {
 
 .hero-meta {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 12px;
   margin-top: 22px;
 }
@@ -481,9 +481,10 @@ main {
 }
 
 .background-fx {
-  position: fixed;
+  position: absolute;
   inset: 0;
   z-index: 0;
+  min-height: 100%;
   overflow: hidden;
   pointer-events: none;
 }
@@ -498,8 +499,9 @@ main {
 }
 
 .background-face {
-  position: absolute;
+  position: sticky;
   top: -4vh;
+  margin-left: auto;
   right: 0;
   width: min(64vw, 840px);
   height: 116vh;
@@ -508,7 +510,7 @@ main {
   background-repeat: no-repeat;
   opacity: 0.48;
   filter: blur(2.5px) saturate(0.95) contrast(1.06);
-  transform: translate3d(0, calc(var(--scroll-y, 0) * -0.04px), 0) scale(1.05);
+  transform: translate3d(0, calc(var(--scroll-y, 0) * -0.025px), 0) scale(1.05);
   mix-blend-mode: lighten;
 }
 
@@ -564,14 +566,14 @@ main {
 }
 
 .cv-page::before {
-  position: fixed;
+  position: absolute;
   inset: 0;
   z-index: -1;
   content: "";
   background:
     linear-gradient(90deg, rgba(3, 8, 20, 0.52), rgba(3, 8, 20, 0.1) 54%, rgba(3, 8, 20, 0.36)),
-    var(--profile-bg) right top / min(64vw, 840px) auto no-repeat;
-  opacity: 0.72;
+    var(--profile-bg) right top / min(64vw, 840px) auto repeat-y;
+  opacity: 0.42;
   pointer-events: none;
 }
 
@@ -611,6 +613,32 @@ h1 span {
 .compact-list,
 .soft-card p {
   color: var(--muted);
+}
+
+.brand-lockup {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.brand-lockup svg {
+  color: var(--green);
+  filter: drop-shadow(0 0 10px rgba(102, 226, 211, 0.5));
+}
+
+.professional-title {
+  max-width: 760px;
+  margin: 0 0 14px;
+  color: #c9f5ff;
+  font-size: clamp(1rem, 2vw, 1.22rem);
+  font-weight: 800;
+  line-height: 1.55;
+  text-shadow: 0 0 20px rgba(102, 226, 211, 0.22);
 }
 
 .profile-photo {
@@ -806,8 +834,8 @@ h1 span {
   .cv-page::before {
     background:
       linear-gradient(180deg, rgba(3, 8, 20, 0.26), rgba(3, 8, 20, 0.66)),
-      var(--profile-bg) right top / 96vw auto no-repeat;
-    opacity: 0.66;
+      var(--profile-bg) right top / 96vw auto repeat-y;
+    opacity: 0.48;
   }
 
   .hero-grid-modern,
@@ -834,8 +862,8 @@ h1 span {
   .cv-page::before {
     background:
       linear-gradient(180deg, rgba(3, 8, 20, 0.2), rgba(3, 8, 20, 0.74)),
-      var(--profile-bg) center top / 128vw auto no-repeat;
-    opacity: 0.62;
+      var(--profile-bg) center top / 128vw auto repeat-y;
+    opacity: 0.48;
   }
 
   .hero-copy {
