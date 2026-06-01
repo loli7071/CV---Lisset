@@ -104,6 +104,13 @@
   ],
   "education": [
     {
+      "period": "Actualidad",
+      "place": "UNIFATECIE",
+      "degree": "Estudiante de primer semestre de Administración",
+      "organization": "Centro Universitario UNIFATECIE",
+      "details": ["Formación universitaria en administración, gestión organizacional y fundamentos empresariales."]
+    },
+    {
       "period": "Laurea",
       "place": "La Habana",
       "degree": "Instituto de Estudios Eclesiásticos Padre Félix Varela",

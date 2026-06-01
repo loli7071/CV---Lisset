@@ -78,6 +78,7 @@
     { "period": "International experience", "place": "Boa Vista, Brazil", "role": "Hospitality, commerce and food service", "organization": "Eco Hotel, Shopping Center and Recanto da Peixada", "details": ["Receptionist — Eco Hotel.", "Store operator — Shopping Center.", "Salesperson — Shopping Center.", "Cumim — Recanto da Peixada.", "Development of customer-service, multidisciplinary-work and intercultural-adaptation skills."] }
   ],
   "education": [
+    { "period": "Current", "place": "UNIFATECIE", "degree": "First-semester Business Administration student", "organization": "UNIFATECIE University Center", "details": ["University studies in administration, organizational management and business fundamentals."] },
     { "period": "Laurea", "place": "Havana", "degree": "Padre Félix Varela Institute of Ecclesiastical Studies", "organization": "Complementary education", "details": ["Public speaking.", "Aristotelian Logic.", "Ancient Philosophy.", "Economics.", "Politics."] }
   ],
   "skills": [

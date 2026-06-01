@@ -78,6 +78,7 @@
     { "period": "Experiência internacional", "place": "Boa Vista, Brasil", "role": "Hotelaria, comércio e gastronomia", "organization": "Eco Hotel, Shopping Center e Recanto da Peixada", "details": ["Recepcionista — Eco Hotel.", "Operadora de loja — Shopping Center.", "Vendedora — Shopping Center.", "Cumim — Recanto da Peixada.", "Desenvolvimento de habilidades de atendimento ao cliente, trabalho multidisciplinar e adaptação intercultural."] }
   ],
   "education": [
+    { "period": "Atualidade", "place": "UNIFATECIE", "degree": "Estudante do primeiro semestre de Administração", "organization": "Centro Universitário UNIFATECIE", "details": ["Formação universitária em administração, gestão organizacional e fundamentos empresariais."] },
     { "period": "Laurea", "place": "Havana", "degree": "Instituto de Estudos Eclesiásticos Padre Félix Varela", "organization": "Formação complementar", "details": ["Oratória.", "Lógica Aristotélica.", "Filosofia Antiga.", "Economia.", "Política."] }
   ],
   "skills": [
