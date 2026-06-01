@@ -88,19 +88,7 @@ export default function DownloadButton({ targetId }) {
         pdf.addImage(image, 'JPEG', 0, 0, pageWidth, renderedHeight);
       }
 
-      if (canvas.height <= 0) {
-        pdf.addPage();
-      }
-
-      const blob = pdf.output('blob');
-      const url = URL.createObjectURL(blob);
-      const link = document.createElement('a');
-      link.href = url;
-      link.download = `Lisset-Dayana-Gomez-Perez-CV-${i18n.language.toUpperCase()}.pdf`;
-      document.body.appendChild(link);
-      link.click();
-      link.remove();
-      URL.revokeObjectURL(url);
+      pdf.save(`Lisset-Dayana-Gomez-Perez-CV-${i18n.language.toUpperCase()}.pdf`);
     } catch (error) {
       console.error('PDF export failed', error);
       window.alert(t('actions.exportError'));
